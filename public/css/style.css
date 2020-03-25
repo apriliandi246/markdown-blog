@@ -15,6 +15,12 @@ a.logo img {
 }
 
 
+/* article */
+hr {
+      border-top: 3px dotted black;
+}
+
+
 .space-top {
       margin-top: 155px;
 }
