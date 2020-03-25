@@ -8,6 +8,7 @@ body {
 }
 
 
+
 /* navbar */
 a.logo img {
       width: 55px;
@@ -15,10 +16,24 @@ a.logo img {
 }
 
 
+
 /* article */
+.article a {
+      color: black;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: normal;
+      margin-bottom: 15px;
+}
+
+.article a:hover {
+      color: blue;
+}
+
 hr {
       border-top: 3px dotted black;
 }
+
 
 
 .space-top {
