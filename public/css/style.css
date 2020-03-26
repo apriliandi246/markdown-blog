@@ -18,7 +18,7 @@ a.logo img {
 
 
 /* article */
-.article a {
+.article a.title-article {
       color: black;
       font-size: 40px;
       font-weight: bold;
@@ -30,11 +30,9 @@ a.logo img {
       color: blue;
 }
 
-hr {
+.article hr {
       border-top: 3px dotted black;
 }
-
-
 
 .space-top {
       margin-top: 155px;
