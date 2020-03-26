@@ -11,4 +11,5 @@ module.exports = function (app) {
 
       //routes
       app.use('/', require('../routes/index'));
+      app.use('/article', require('../routes/article'));
 }
