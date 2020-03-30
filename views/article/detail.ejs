@@ -15,7 +15,7 @@
             <div class="row justify-content-center mb-5 space-top">
                   <div class="col-9">
                         <h1><%= article.title %></h1>
-                        <h6 class="text-muted mb-4 mt-3"><%= article.createdAt.toLocaleDateString(); %></h6>
+                        <h6 class="text-muted mb-5 mt-3"><%= article.createdAt.toLocaleDateString(); %></h6>
                         <div class="mt-3" id="markdown-blog">
                               <%- article.sanitizedHtml %>
                         </div>

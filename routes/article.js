@@ -5,7 +5,9 @@ const router = express.Router();
 
 // GET : new article
 router.get('/new', (req, res) => {
-     res.render('article/new_article');
+     res.render('article/new_article', {
+          article: new Article
+     });
 });
 
 
@@ -23,10 +25,15 @@ router.get('/detail/:slug', async (req, res) => {
 });
 
 
-// GET : edit artcle
-router.get('/edit/:id', (req, res) => {
-     res.render('article/edit_article');
+// GET : edit article
+router.get('/edit/:id', async (req, res) => {
+     const article = await Article.findById(req.params.id);
+
+     res.render('article/edit_article', {
+          article
+     });
 });
+
 
 
 // POST : new article
@@ -36,11 +43,21 @@ router.post('/new', (req, res, next) => {
 }, saveArticleAndRedirect());
 
 
+
+// PUT : edit article
+router.post('/edit/:id', async (req, res, next) => {
+     req.article = await Article.findById(req.params.id);
+     next();
+}, saveArticleAndRedirect());
+
+
+
 // DELETE : article
-router.delete('/delete/:id', async (req, res) => {
+router.post('/delete/:id', async (req, res) => {
      await Article.findByIdAndDelete(req.params.id)
      res.redirect('/');
 });
+
 
 
 function saveArticleAndRedirect() {
@@ -55,7 +72,8 @@ function saveArticleAndRedirect() {
                res.redirect('/');
 
           } catch (e) {
-               res.render('/');
+               console.log(e);
+               res.redirect('/');
           }
      }
 }

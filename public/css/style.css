@@ -1,9 +1,9 @@
 * {
-      font-family: Ubuntu;
       font-size: 18px;
 }
 
 body {
+      font-family: Ubuntu;
       background-color: rgb(238, 238, 238);
 }
 
@@ -19,7 +19,7 @@ a.logo img {
 
 /* article */
 .article hr {
-      border-top: 3px dotted black;
+      border-top: 3px solid black;
 }
 
 #markdown-blog {

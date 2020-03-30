@@ -15,15 +15,18 @@
                   <div class="col-10">
                         <% articles.forEach(article => { %>
                         <div class="article">
-                              <h1 class="mb-3"><%= article.title %></h1>
+                              <h1 class="mb-2"><%= article.title %></h1>
                               <h6 class=" text-muted mb-3 mt-2"><%= article.createdAt.toLocaleDateString(); %></h6>
                               <p class="mb-4 mt-1"><%= article.description %></p>
 
                               <a href="/article/detail/<%= article.slug %>"
                                     class="btn btn-outline-info btn-sm mb-4 mr-3">Read More</a>
-                              <a href="/article/edit/12" class="btn btn-outline-primary btn-sm mb-4 mr-3">Edit</a>
-                              <a href="#" class="btn btn-outline-danger btn-sm mb-4">Delete</a>
-                              <hr class="mb-5">
+                              <a href="/article/edit/<%= article.id %>"
+                                    class="btn btn-outline-primary btn-sm mb-4 mr-3">Edit</a>
+                              <form action="/article/delete/<%= article.id %>" method="POST" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm mb-4">Delete</button>
+                              </form>
+                              <hr class="mb-5 mt-4">
                         </div>
                         <% }); %>
                   </div>
