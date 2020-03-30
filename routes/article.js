@@ -1,27 +1,59 @@
 const express = require('express');
-const {
-      render_new_article_page,
-      render_detail_aticle_page,
-      render_edit_article_page
-} = require('../controllers/article');
+const Article = require('../models/article');
 const router = express.Router();
 
 
-
 // GET : new article
-router.get('/new', render_new_article_page);
+router.get('/new', (req, res) => {
+     res.render('article/new_article');
+});
 
 
 // GET : detail article
-router.get('/detail/:slug', render_detail_aticle_page);
+router.get('/detail/:slug', async (req, res) => {
+     const article = await Article.findOne({
+          slug: req.params.slug
+     });
+
+     if (article === null) return res.redirect('/');
+
+     res.render('article/detail', {
+          article
+     });
+});
 
 
 // GET : edit artcle
-router.get('/edit/:id', render_edit_article_page);
+router.get('/edit/:id', (req, res) => {
+     res.render('article/edit_article');
+});
 
 
 // POST : new article
-router.post('/new', );
+router.post('/new', (req, res, next) => {
+     req.article = new Article();
+     next();
+}, saveArticleAndRedirect());
+
+
+
+function saveArticleAndRedirect() {
+     return async (req, res) => {
+          let article = req.article;
+
+          article.title = req.body.title;
+          article.description = req.body.description;
+          article.markdown = req.body.markdown;
+
+          try {
+               article = await article.save();
+               res.redirect('/');
+
+          } catch (e) {
+               res.render('/');
+          }
+     }
+}
 
 
 module.exports = router;
