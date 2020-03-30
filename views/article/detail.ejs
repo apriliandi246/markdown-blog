@@ -21,6 +21,17 @@
                         </div>
                   </div>
             </div>
+
+            <div class="row justify-content-center">
+                  <div class="col-9 mt-5">
+                        <a href="/article/edit/<%= article.id %>"
+                              class="btn btn-outline-primary btn-sm mb-3 mr-3 btn-block">Edit</a>
+                        <hr>
+                        <form action="/article/delete/<%= article.id %>" method="POST">
+                              <button type="submit" class="btn btn-outline-danger btn-sm mb-4 btn-block">Delete</button>
+                        </form>
+                  </div>
+            </div>
       </div>
 
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
