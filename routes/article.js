@@ -3,7 +3,8 @@ const Article = require('../models/article');
 const router = express.Router();
 
 
-// GET : new article
+
+// get make new article page
 router.get('/new', (req, res) => {
      res.render('article/new_article', {
           article: new Article
@@ -11,7 +12,8 @@ router.get('/new', (req, res) => {
 });
 
 
-// GET : detail article
+
+// get detail article page
 router.get('/detail/:slug', async (req, res) => {
      const article = await Article.findOne({
           slug: req.params.slug
@@ -25,7 +27,8 @@ router.get('/detail/:slug', async (req, res) => {
 });
 
 
-// GET : edit article
+
+// get edit article page
 router.get('/edit/:id', async (req, res) => {
      const article = await Article.findById(req.params.id);
 
@@ -36,7 +39,7 @@ router.get('/edit/:id', async (req, res) => {
 
 
 
-// POST : new article
+// post new article
 router.post('/new', (req, res, next) => {
      req.article = new Article();
      next();
@@ -44,22 +47,23 @@ router.post('/new', (req, res, next) => {
 
 
 
-// PUT : edit article
-router.post('/edit/:id', async (req, res, next) => {
+// edit article
+router.put('/edit/:id', async (req, res, next) => {
      req.article = await Article.findById(req.params.id);
      next();
 }, saveArticleAndRedirect());
 
 
 
-// DELETE : article
-router.post('/delete/:id', async (req, res) => {
+// delete article
+router.delete('/delete/:id', async (req, res) => {
      await Article.findByIdAndDelete(req.params.id)
      res.redirect('/');
 });
 
 
 
+// function for post and put article
 function saveArticleAndRedirect() {
      return async (req, res) => {
           let article = req.article;
