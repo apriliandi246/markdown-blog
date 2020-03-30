@@ -23,9 +23,16 @@ a.logo img {
 }
 
 #markdown-blog {
-      font-size: 21px;
-      line-height: 33px;
+      font-size: 22px;
+      line-height: 32px;
 }
+
+/* for code line */
+pre {
+      font-size: 16px;
+      border-radius: 5px;
+}
+
 
 .space-top {
       margin-top: 155px;
