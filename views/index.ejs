@@ -12,16 +12,32 @@
 
       <div class="container">
             <div class="row justify-content-center space-top mb-4">
-                  <div class="col-10">
+                  <div class="col-11">
                         <% if (articles.length !== 0) { %>
                         <% articles.forEach(article => { %>
                         <div class="article">
                               <h1 class="mb-2"><%= article.title %></h1>
                               <h6 class=" text-muted mb-3 mt-2"><%= article.createdAt.toLocaleDateString(); %></h6>
-                              <p class="mb-4 mt-1"><%= article.description %></p>
+                              <p class="mb-3 mt-1"><%= article.description %></p>
 
-                              <a href="/article/detail/<%= article.slug %>"
-                                    class="btn btn-outline-info btn-sm mb-4 mr-3">Read More</a>
+                              <div class="d-flex flex-row-reverse bd-highlight mt-2">
+                                    <div class="p-2 bd-highlight">
+                                          <form action="/article/delete/<%= article.id %>?_method=DELETE" method="POST"
+                                                class="d-inline">
+                                                <button type="submit"
+                                                      class="btn btn-outline-danger btn-sm mb-4">Delete</button>
+                                          </form>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                          <a href="/article/edit/<%= article.id %>"
+                                                class="btn btn-outline-primary btn-sm mb-4">Edit</a>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                          <a href="/article/detail/<%= article.slug %>"
+                                                class="btn btn-outline-info btn-sm mb-4">Read More</a>
+                                    </div>
+                              </div>
+
                               <hr class="mb-5 mt-3">
                         </div>
                         <% }); %>

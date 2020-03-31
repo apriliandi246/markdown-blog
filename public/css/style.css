@@ -15,11 +15,14 @@ a.logo img {
       height: 55px;
 }
 
+.nav-item a.start-writing:hover {
+      text-decoration: underline;
+}
 
 
 /* article */
 .article hr {
-      border-top: 3px solid black;
+      border-top: 1px solid black;
 }
 
 #markdown-blog {
@@ -29,9 +32,15 @@ a.logo img {
 
 /* for code line */
 pre {
-      font-size: 16px;
       border-radius: 5px;
 }
+
+pre code,
+span {
+      font-size: 17px;
+      line-height: 23px;
+}
+
 
 
 .space-top {

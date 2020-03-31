@@ -10,14 +10,9 @@
 <body>
       <%- include('../partials/navbar2.ejs') %>
 
-      <div class="container space-top text-center">
-            <h2>New Article</h2>
-            <hr>
-      </div>
-
       <div class="container">
-            <div class="row justify-content-center mt-5 mb-5">
-                  <div class="col-10">
+            <div class="row justify-content-center mb-5 space-top">
+                  <div class="col-11">
                         <form action="/article/new" method="POST">
                               <%- include('../partials/form'); %>
                         </form>
