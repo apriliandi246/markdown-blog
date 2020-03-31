@@ -1,15 +1,13 @@
-* {
-      font-size: 18px;
-}
-
 body {
       font-family: Ubuntu;
+      font-size: 19px;
+}
+
+/* navbar */
+nav {
       background-color: rgb(238, 238, 238);
 }
 
-
-
-/* navbar */
 a.logo img {
       width: 55px;
       height: 55px;
@@ -26,8 +24,9 @@ a.logo img {
 }
 
 #markdown-blog {
-      font-size: 22px;
-      line-height: 32px;
+      font-size: 21px;
+      font-weight: 368;
+      line-height: 33px;
 }
 
 /* for code line */
@@ -40,8 +39,6 @@ span {
       font-size: 17px;
       line-height: 23px;
 }
-
-
 
 .space-top {
       margin-top: 155px;

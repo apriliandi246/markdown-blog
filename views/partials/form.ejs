@@ -2,19 +2,19 @@
       <div class="form-group mb-4">
             <label for="title">Title</label>
             <input type="text" required value="<%= article.title %>" name="title" class="form-control" id="title"
-                  placeholder="title">
+                  placeholder="title" spellcheck="false">
       </div>
 
       <div class="form-group mb-4">
             <label for="textarea">Description</label>
             <textarea class="form-control" required name="description" id="textarea" rows="7"
-                  placeholder="description..."><%= article.description %></textarea>
+                  placeholder="description..." spellcheck="false"><%= article.description %></textarea>
       </div>
 
       <div class="form-group">
             <label for="article">Article</label>
             <textarea class="form-control" name="markdown" required id="article" rows="25"
-                  placeholder="body markdown..."><%= article.markdown %></textarea>
+                  placeholder="body markdown..." spellcheck="false"><%= article.markdown %></textarea>
       </div>
 
       <button type="submit" class="btn btn-outline-primary btn-block mb-3 mt-5">Save</button>
