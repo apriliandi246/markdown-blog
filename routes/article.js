@@ -19,11 +19,13 @@ router.get('/detail/:slug', async (req, res) => {
           slug: req.params.slug
      });
 
-     if (article === null) return res.redirect('/');
-
-     res.render('article/detail', {
-          article
-     });
+     if (article === null) {
+          res.redirect('/');
+     } else {
+          res.render('article/detail_article', {
+               article
+          });
+     }
 });
 
 
@@ -55,7 +57,7 @@ router.put('/edit/:id', async (req, res, next) => {
 
 
 
-// delete article
+// delete article the article
 router.delete('/delete/:id', async (req, res) => {
      await Article.findByIdAndDelete(req.params.id)
      res.redirect('/');

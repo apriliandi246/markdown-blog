@@ -1,45 +1,53 @@
+/* body */
 body {
-      font-family: Ubuntu;
-      font-size: 19px;
+  font-family: Ubuntu;
+  font-size: 19px;
 }
+
 
 /* navbar */
 nav {
-      background-color: rgb(238, 238, 238);
+  background-color: rgb(238, 238, 238);
 }
 
 a.logo img {
-      width: 55px;
-      height: 55px;
+  width: 55px;
+  height: 55px;
 }
 
 .nav-item a.start-writing:hover {
-      text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 /* article */
 .article hr {
-      border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
-#markdown-blog {
-      font-size: 21px;
-      font-weight: 368;
-      line-height: 33px;
+.article p {
+  font-size: 21px;
 }
+
+
+/* detail article */
+#markdown-blog {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 33px;
+}
+
 
 /* for code line */
-pre {
-      border-radius: 5px;
+pre,
+code,
+span {
+  font-size: 17px;
+  line-height: 23px;
+  border-radius: 5px;
 }
 
-pre code,
-span {
-      font-size: 17px;
-      line-height: 23px;
-}
 
 .space-top {
-      margin-top: 155px;
+  margin-top: 140px;
 }

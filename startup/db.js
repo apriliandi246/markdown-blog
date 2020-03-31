@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-module.exports = function () {
+module.exports = () => {
       mongoose.connect("mongodb://localhost/project_3", {
                   useFindAndModify: true,
                   useNewUrlParser: true,
