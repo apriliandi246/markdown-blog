@@ -8,5 +8,5 @@ module.exports = () => {
                   useCreateIndex: true
             })
             .then(() => console.log("Connect to MongoDB..."))
-            .catch(err => console.log("Something wromg", err));
+            .catch(err => console.log("Something wrong : ", err));
 }

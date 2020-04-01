@@ -37,12 +37,16 @@ a.logo img {
   line-height: 33px;
 }
 
+#markdown-blog img {
+  border-radius: 5px;
+}
+
 h1.artilce-title {
   font-size: 45px;
 }
 
 h6.article-date {
-  margin-bottom: 37px;
+  margin-bottom: 20px;
 }
 
 /* for code line */

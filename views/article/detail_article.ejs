@@ -15,9 +15,46 @@
             <div class="row justify-content-center mb-5 space-top">
                   <div class="col-10">
                         <h1 class="artilce-title"><%= article.title %></h1>
+
                         <h6 class="article-date text-muted mt-3"><%= article.createdAt.toLocaleDateString(); %></h6>
+
+                        <div class="dropdown mb-5">
+                              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Menu
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item text-monospace"
+                                          href="/article/edit/<%= article.id %>">Edit</a>
+                                    <button type="button" class="dropdown-item text-monospace" data-toggle="modal"
+                                          data-target="#exampleModal">
+                                          Delete
+                                    </button>
+                              </div>
+                        </div>
+
                         <div id="markdown-blog">
                               <%- article.sanitizedHtml %>
+                        </div>
+                  </div>
+
+                  <!-- Modal for delete article -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                    <div class="modal-body text-monospace">
+                                          Are you sure you want to delete this article ?
+                                    </div>
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary text-monospace mr-3"
+                                                data-dismiss="modal">No</button>
+                                          <form action="/article/delete/<%= article.id %>?_method=DELETE" method="POST"
+                                                class="d-inline">
+                                                <button type="submit" class="btn btn-danger text-monospace">Yes</button>
+                                          </form>
+                                    </div>
+                              </div>
                         </div>
                   </div>
             </div>
