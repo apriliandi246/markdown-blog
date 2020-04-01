@@ -37,6 +37,13 @@ a.logo img {
   line-height: 33px;
 }
 
+h1.artilce-title {
+  font-size: 45px;
+}
+
+h6.article-date {
+  margin-bottom: 37px;
+}
 
 /* for code line */
 pre,
