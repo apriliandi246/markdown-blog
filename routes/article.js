@@ -47,6 +47,8 @@ router.get('/tag/:tag', async (req, res) => {
           tags: {
                $all: [req.params.tag]
           }
+     }).sort({
+          createdAt: 'desc'
      });
 
      res.render('article/tag_article', {
