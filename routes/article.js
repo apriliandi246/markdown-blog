@@ -69,7 +69,9 @@ router.delete('/delete/:id', async (req, res) => {
 function saveArticleAndRedirect() {
      return async (req, res) => {
           let article = req.article;
+
           article.title = req.body.title;
+          article.tags = req.body.tags.split(',');
           article.description = req.body.description;
           article.markdown = req.body.markdown;
 

@@ -18,6 +18,12 @@
 
                         <h6 class="article-date text-muted mt-3"><%= article.createdAt.toLocaleDateString(); %></h6>
 
+                        <% article.tags.forEach(tag => { %>
+                        <div class="badge badge-primary mb-4">
+                              <%= tag %>
+                        </div>
+                        <% }); %>
+
                         <div class="dropdown mb-5">
                               <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
