@@ -41,6 +41,22 @@ router.get('/edit/:id', async (req, res) => {
 
 
 
+// get article tag
+router.get('/tag/:tag', async (req, res) => {
+     const articles = await Article.find({
+          tags: {
+               $all: [req.params.tag]
+          }
+     });
+
+     res.render('article/tag_article', {
+          articles,
+          tag: req.params.tag
+     });
+});
+
+
+
 // post new article
 router.post('/new', (req, res, next) => {
      req.article = new Article();

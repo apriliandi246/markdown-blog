@@ -21,7 +21,7 @@
                               <h6 class=" text-muted mb-3 mt-2"><%= article.createdAt.toLocaleDateString(); %></h6>
 
                               <% article.tags.forEach(tag => { %>
-                              <div class="badge badge-primary mb-3">
+                              <div class="badge badge-primary mb-3 text-monospace">
                                     <%= tag %>
                               </div>
                               <% }); %>
@@ -40,8 +40,8 @@
                         <% }); %>
 
                         <% } else { %>
-                        <div class="not-found text-center mt-5">
-                              <h1>Article does not exist now</h1>
+                        <div class="not-found text-center mt-5 text-monospace">
+                              <h1>~~ Article does not exist now ~~</h1>
                         </div>
                         <% } %>
                   </div>
