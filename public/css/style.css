@@ -50,8 +50,9 @@ h6.article-date {
 pre,
 code,
 span {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 17px;
-  line-height: 23px;
+  line-height: 25px;
   border-radius: 5px;
 }
 
