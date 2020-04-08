@@ -2,6 +2,7 @@
 
 const express = require('express');
 const Article = require('../models/article');
+const moment = require('moment');
 const router = express.Router();
 
 
@@ -24,8 +25,13 @@ router.get('/detail/:slug', async (req, res) => {
      if (article === null) {
           res.redirect('/');
      } else {
+          function formatDate(date) {
+               return moment(date).format('ll');
+          }
+
           res.render('article/detail_article', {
-               article
+               article,
+               formatDate
           });
      }
 });

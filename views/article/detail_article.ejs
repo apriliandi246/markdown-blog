@@ -46,7 +46,7 @@
                   <div class="col-10">
                         <h1 class="artilce-title"><%= article.title %></h1>
 
-                        <h6 class="article-date text-muted mt-3"><%= article.createdAt.toLocaleDateString(); %></h6>
+                        <h6 class="article-date text-muted mt-3"><%= formatDate(article.createdAt); %></h6>
 
                         <% article.tags.forEach(tag => { %>
                         <div class="badge badge-primary mb-4 text-monospace">

@@ -2,6 +2,7 @@
 
 const express = require('express');
 const Article = require('../models/article');
+const moment = require('moment');
 const router = express.Router();
 
 
@@ -11,8 +12,13 @@ router.get('/', async (req, res) => {
           createdAt: 'desc'
      });
 
+     function formatDate(date) {
+          return moment(date).format('ll');
+     }
+
      res.render('index', {
-          articles
+          articles,
+          formatDate
      });
 });
 
