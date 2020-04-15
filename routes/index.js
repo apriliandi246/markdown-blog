@@ -8,18 +8,18 @@ const router = express.Router();
 
 // main page
 router.get('/', async (req, res) => {
-     const articles = await Article.find().sort({
-          createdAt: 'desc'
-     });
+    const articles = await Article.find().sort({
+        createdAt: 'desc'
+    });
 
-     function formatDate(date) {
-          return moment(date).format('ll');
-     }
+    function formatDate(date) {
+        return moment(date).format('ll');
+    }
 
-     res.render('index', {
-          articles,
-          formatDate
-     });
+    res.render('index', {
+        articles,
+        formatDate
+    });
 });
 
 

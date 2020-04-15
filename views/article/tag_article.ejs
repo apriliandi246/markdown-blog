@@ -18,10 +18,10 @@
                 <div class="article">
                     <h1 class="mb-2"><%= article.title %></h1>
 
-                    <h6 class=" text-muted mb-3 mt-2"><%= article.createdAt.toLocaleDateString(); %></h6>
+                    <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
 
                     <% article.tags.forEach(tag => { %>
-                    <div class="badge badge-primary mb-3 text-monospace">
+                    <div class="badge badge-primary mb-4 text-monospace">
                         <%= tag %>
                     </div>
                     <% }); %>

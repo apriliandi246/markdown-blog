@@ -43,14 +43,13 @@
       <!-- article body -->
       <div class="container">
             <div class="row justify-content-center mb-5 space-top">
-                  <div class="col-10">
+                  <div class="col-9">
                         <h1 class="artilce-title"><%= article.title %></h1>
 
-                        <h6 class="article-date text-muted text-monospace mt-3"><%= formatDate(article.createdAt); %>
-                        </h6>
+                        <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
 
                         <% article.tags.forEach(tag => { %>
-                        <div class="badge badge-primary mb-4 text-monospace">
+                        <div class="badge badge-primary mb-5 text-monospace">
                               <%= tag %>
                         </div>
                         <% }); %>

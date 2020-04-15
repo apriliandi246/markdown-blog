@@ -5,11 +5,8 @@ body {
 }
 
 
-/* navbar */
-nav {
-  background-color: rgb(238, 238, 238);
-}
 
+/* nav */
 a.logo img {
   width: 55px;
   height: 55px;
@@ -27,6 +24,7 @@ a.logo img {
 }
 
 
+
 /* detail article */
 #markdown-blog {
   font-size: 21px;
@@ -42,21 +40,31 @@ h1.artilce-title {
   font-size: 45px;
 }
 
-h6.article-date {
-  margin-bottom: 20px;
+h5.article-date {
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
+
+
 
 /* for code line */
 pre,
 code,
 span {
   font-family: monospace;
-  font-size: 17px;
+  font-size: 16.6px;
   line-height: 25px;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 
+
+/* another style */
 .space-top {
-  margin-top: 140px;
+  margin-top: 160px;
+}
+
+.to-right {
+  text-align: right;
 }
