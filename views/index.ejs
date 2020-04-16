@@ -21,7 +21,7 @@
                     <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
 
                     <% article.tags.forEach(tag => { %>
-                    <div class="badge badge-primary mb-4 text-monospace">
+                    <div class="badge badge-dark mb-4 text-monospace">
                         <%= tag %>
                     </div>
                     <% }); %>
@@ -31,7 +31,7 @@
                     <div class="d-flex flex-row-reverse bd-highlight mt-2">
                         <div class="p-2">
                             <a href="/article/detail/<%= article.slug %>"
-                                class="btn btn-outline-info btn-sm mb-4 text-monospace">Read More</a>
+                                class="btn btn-outline-dark btn-sm mb-4 text-monospace">Read More</a>
                         </div>
                     </div>
 
