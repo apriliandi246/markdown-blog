@@ -16,7 +16,7 @@ router.get('/new', (req, res) => {
 
 
 
-// get detail article page
+// detail article page
 router.get('/detail/:slug', async (req, res) => {
     const article = await Article.findOne({
         slug: req.params.slug
@@ -111,7 +111,7 @@ function saveArticleAndRedirect() {
 
 
 
-// function format date
+// function to make format date
 function formatDate(date) {
     return moment(date).format('ll');
 }

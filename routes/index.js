@@ -12,15 +12,17 @@ router.get('/', async (req, res) => {
         createdAt: 'desc'
     });
 
-    function formatDate(date) {
-        return moment(date).format('ll');
-    }
-
     res.render('index', {
         articles,
         formatDate
     });
 });
+
+
+// function to make format date
+function formatDate(date) {
+    return moment(date).format('ll');
+}
 
 
 module.exports = router;
