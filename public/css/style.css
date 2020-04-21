@@ -1,8 +1,10 @@
 /* body */
 body {
-  font-family: Ubuntu;
   font-size: 19px;
+  font-family: Ubuntu;
 }
+
+
 
 
 
@@ -14,18 +16,32 @@ a.logo img {
 
 
 
-/* article */
-.article hr {
-  border-top: 1px solid black;
-}
 
+
+/* article */
 .article p {
   font-size: 21px;
 }
 
+.article hr {
+  border-top: 1px solid black;
+}
+
+
+
 
 
 /* detail article */
+h1.artilce-title {
+  font-size: 45px;
+}
+
+h5.article-date {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
 #markdown-blog {
   font-size: 21px;
   font-family: Ubuntu;
@@ -41,30 +57,19 @@ a.logo img {
   margin-top: 34px;
 }
 
-h1.artilce-title {
-  font-size: 45px;
-}
-
-h5.article-date {
-  font-family: monospace;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-
 #markdown-blog blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
+  border-left: 10px solid #ccc;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 #markdown-blog blockquote:before {
   color: #ccc;
-  content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
+  content: open-quote;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
@@ -76,15 +81,19 @@ h5.article-date {
 
 
 
+
+
 /* for code line */
 pre,
 code,
 span {
-  font-family: monospace;
   font-size: 16.6px;
   line-height: 25px;
   border-radius: 6px;
+  font-family: monospace;
 }
+
+
 
 
 
@@ -95,4 +104,17 @@ span {
 
 .to-right {
   text-align: right;
+}
+
+input.form-control,
+textarea.form-control {
+  transition: .2s;
+  font-size: 18px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  font-size: 18.2px;
+  color: rgb(41, 39, 39);
+  background-color: whitesmoke;
 }
