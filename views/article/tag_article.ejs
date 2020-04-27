@@ -12,7 +12,7 @@
 
     <div class="container">
         <div class="row justify-content-center space-top mb-4">
-            <div class="col-9">
+            <div class="col-11">
                 <% if (articles.length !== 0) { %>
                 <% articles.forEach(article => { %>
                 <div class="article">
@@ -21,7 +21,7 @@
                     <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
 
                     <% article.tags.forEach(tag => { %>
-                    <div class="badge badge-dark mb-4 text-monospace">
+                    <div class="badge badge-dark mb-4 mr-2 text-monospace">
                         <%= tag %>
                     </div>
                     <% }); %>
@@ -40,7 +40,7 @@
                 <% } else { %>
                 <div class="not-found text-center mt-5 text-monospace">
                     <h1>Article with the tag "<%= tag %>" does not exist</h1>
-                    <h1>~~~~~~~</h1>
+                    <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
                 </div>
                 <% } %>
             </div>

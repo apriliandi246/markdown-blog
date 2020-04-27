@@ -44,9 +44,9 @@
       <div class="container">
             <div class="row justify-content-center mb-5 space-top">
                   <div class="col-10">
-                        <h1 class="artilce-title"><%= article.title %></h1>
+                        <h1 class="artilce-title mb-3"><%= article.title %></h1>
 
-                        <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
+                        <h5 class="text-muted article-date"><%= formatDate(article.createdAt); %></h5>
 
                         <% article.tags.forEach(tag => { %>
                         <div class="badge badge-dark mb-4 text-monospace">
@@ -54,7 +54,7 @@
                         </div>
                         <% }); %>
 
-                        <div id="markdown-blog">
+                        <div class="article-body" id="markdown-blog">
                               <%- article.sanitizedHtml %>
                         </div>
                   </div>
