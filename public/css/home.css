@@ -1,0 +1,86 @@
+.container {
+   width: 900px;
+   margin: auto;
+   margin-top: 150px;
+   color: whitesmoke;
+   font-family: Ubuntu;
+   display: flex;
+   justify-content: center;
+}
+
+
+/* Article */
+
+.articles {
+   width: 770px;
+   margin-left: 140px;
+}
+
+a.title {
+   color: white;
+   font-size: 30px;
+   line-height: 45px;
+   text-decoration: none;
+   transition: .1s;
+}
+
+a.title:hover {
+   color: blueviolet;
+}
+
+p.published {
+   font-size: 20px;
+   margin: 19px 0 22px 0;
+   font-family: monospace;
+}
+
+p.tag {
+   width: 100px;
+   padding: 6px;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+   color: rgb(26, 18, 18);
+   font-family: monospace;
+   background-color: yellowgreen;
+}
+
+hr {
+   margin: 71px 0 65px 0;
+   border: 4px dashed whitesmoke;
+}
+
+/* Article */
+
+
+/* TAGS */
+
+.tags {
+   width: 100px;
+   margin-left: -90px;
+}
+
+.tags ul {
+   position: fixed;
+}
+
+.tags ul li {
+   list-style: square;
+   margin-top: 15px;
+   margin-bottom: 35px;
+   font-family: monospace;
+}
+
+.tags ul li a {
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+   transition: .2s;
+}
+
+.tags ul li a:hover {
+   color: blueviolet;
+   text-decoration: underline;
+}
+
+/* TAGS */

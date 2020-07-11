@@ -4,46 +4,94 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/full-navbar.css">
+   <link rel="stylesheet" href="../css/home.css">
    <title>Home</title>
 </head>
 
 <body>
-   <%- include('./partials/navbar') %>
+   <%- include('./partials/full-navbar') %>
 
    <div class="container">
-      <div class="row justify-content-center space-top mb-5">
-         <div class="col-11">
-            <% if (articles.length !== 0) { %>
-            <% articles.forEach(article => { %>
+      <div class="tags">
+         <ul>
+            <li><a href="#">Javascrip</a></li>
+            <li><a href="#">NodeJs</a></li>
+            <li><a href="#">ExpressJs</a></li>
+            <li><a href="#">ReactJs</a></li>
+            <li><a href="#">MongoDB</a></li>
+         </ul>
+      </div>
 
-            <div class="article">
-               <h1 class="mb-3"><%= article.title %></h1>
+      <div class="articles">
+         <div class="article">
+            <a href="#" class="title">Linked List Data Structure in JavaScript Structure in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-               <h5 class="text-muted article-date"><%= formatDate(article.createdAt); %></h5>
+         <div class="article">
+            <a href="#" class="title">Custom errors in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-               <% article.tags.forEach(tag => { %>
-               <div class="tag badge badge-dark mb-4 mr-2 text-monospace">
-                  <%= tag %>
-               </div>
-               <% }); %>
+         <div class="article">
+            <a href="#" class="title">Linked List Data Structure in JavaScript Structure in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-               <p class="mb-3 mt-1"><%= article.description %></p>
+         <div class="article">
+            <a href="#" class="title">Custom errors in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-               <div class="read-more to-right">
-                  <a href="/article/detail/<%= article.slug %>" class="btn btn-outline-dark btn-sm mb-4">Read
-                     More</a>
-               </div>
+         <div class="article">
+            <a href="#" class="title">Linked List Data Structure in JavaScript Structure in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-               <hr class="mb-5 mt-1">
-            </div>
-            <% }); %>
+         <div class="article">
+            <a href="#" class="title">Custom errors in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
 
-            <% } else { %>
-            <div class="not-found text-center mt-5 text-monospace">
-               <h1>Article does not exist right now</h1>
-               <h1>~~~~~~~</h1>
-            </div>
-            <% } %>
+         <div class="article">
+            <a href="#" class="title">Linked List Data Structure in JavaScript Structure in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
+
+         <div class="article">
+            <a href="#" class="title">Custom errors in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
+
+         <div class="article">
+            <a href="#" class="title">Linked List Data Structure in JavaScript Structure in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
+         </div>
+
+         <div class="article">
+            <a href="#" class="title">Custom errors in JavaScript</a>
+            <p class="published">Jun 29, 2020</p>
+            <p class="tag">JavaScript</p>
+            <hr>
          </div>
       </div>
    </div>
