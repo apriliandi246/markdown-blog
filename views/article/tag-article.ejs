@@ -4,47 +4,42 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/navbar.css">
+   <link rel="stylesheet" href="../../css/home.css">
    <title><%= tag %></title>
 </head>
 
 <body>
-   <%- include('../partials/navbar') %>
+   <%- include('../partials/navbar-1') %>
 
    <div class="container">
-      <div class="row justify-content-center space-top mb-4">
-         <div class="col-11">
-            <% if (articles.length !== 0) { %>
-            <% articles.forEach(article => { %>
-            <div class="article">
-               <h1 class="mb-2"><%= article.title %></h1>
-
-               <h5 class="text-muted mt-3 article-date"><%= formatDate(article.createdAt); %></h5>
-
-               <% article.tags.forEach(tag => { %>
-               <div class="badge badge-dark mb-4 mr-2 text-monospace">
-                  <%= tag %>
-               </div>
-               <% }); %>
-
-               <p class="mb-3 mt-1"><%= article.description %></p>
-
-               <div class="read-more to-right">
-                  <a href="/article/detail/<%= article.slug %>" class="btn btn-outline-dark btn-sm mb-4">Read
-                     More</a>
-               </div>
-
-               <hr class="mb-5 mt-1">
-            </div>
-            <% }); %>
-
-            <% } else { %>
-            <div class="not-found text-center mt-5 text-monospace">
-               <h1>Article with the tag "<%= tag %>" does not exist</h1>
-               <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
-            </div>
-            <% } %>
-         </div>
+      <% if(articles.length > 0) { %>
+      <div class="tags">
+         <ul>
+            <li><a href="/article/tag/javascript">Javascrip</a></li>
+            <li><a href="/article/tag/nodejs">NodeJs</a></li>
+            <li><a href="/article/tag/expressjs">ExpressJs</a></li>
+            <li><a href="/article/tag/reactjs">ReactJs</a></li>
+            <li><a href="/article/tag/mongodb">MongoDB</a></li>
+         </ul>
       </div>
+
+      <div class="articles">
+         <% articles.forEach((article) => { %>
+         <div class="article">
+            <a href="/article/detail/<%= article.slug %>" class="title"><%= article.title %></a>
+            <p class="published"><%= formatDate(article.createdAt) %></p>
+            <% article.tags.forEach((tag) => { %>
+            <div class="tag"><%= tag %></div>
+            <% }) %>
+            <hr>
+         </div>
+         <% }) %>
+      </div>
+
+      <% } else { %>
+      <h1 class="no-article">Article with tag "<%= tag %>" doesn't exist right now 😅</h1>
+      <% } %>
    </div>
 </body>
 

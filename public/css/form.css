@@ -1,0 +1,108 @@
+.container form {
+   margin: 50px auto;
+}
+
+form {
+   width: 1100px;
+}
+
+form .input-form {
+   color: black;
+   margin-top: 32px;
+}
+
+form .input-form label {
+   font-size: 20px;
+   font-weight: 520;
+   color: whitesmoke;
+   font-family: monospace;
+}
+
+form .input-form input {
+   width: 100%;
+   border: none;
+   padding: 12px;
+   outline: none;
+   display: block;
+   font-size: 17px;
+   margin-top: 15px;
+   color: whitesmoke;
+   box-sizing: border-box;
+   background-color: rgb(37, 51, 65);
+   transition: .2s;
+}
+
+form .input-form input:focus {
+   background-color: #38444d;
+}
+
+form .input-form input::placeholder {
+   font-family: monospace;
+}
+
+form .input-form textarea {
+   width: 100%;
+   border: none;
+   padding: 12px;
+   outline: none;
+   display: block;
+   font-size: 17px;
+   margin-top: 15px;
+   color: whitesmoke;
+   white-space: pre-line;
+   box-sizing: border-box;
+   background-color: rgb(37, 51, 65);
+   transition: .2s;
+}
+
+form .input-form textarea:focus {
+   background-color: #38444d;
+}
+
+form .input-form textarea::placeholder {
+   font-family: monospace;
+}
+
+form button {
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 10px;
+   cursor: pointer;
+   font-size: 18px;
+   margin-top: 45px;
+   color: whitesmoke;
+   margin-bottom: 10px;
+   font-family: monospace;
+   box-sizing: border-box;
+   background-color: rgb(37, 51, 65);
+   transition: 0.2s;
+}
+
+form button:hover {
+   background-color: #38444d;
+}
+
+form a {
+   width: 100%;
+   border: none;
+   padding: 11px;
+   outline: none;
+   display: block;
+   font-size: 18px;
+   margin-top: 16px;
+   text-align: center;
+   color: whitesmoke;
+   text-decoration: none;
+   font-family: monospace;
+   box-sizing: border-box;
+   background-color: rgb(37, 51, 65);
+}
+
+form a:hover {
+   background-color: #38444d;
+}
+
+form hr {
+   border: 1px solid rgb(37, 51, 65);
+}

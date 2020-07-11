@@ -1,29 +1,21 @@
-<form action="/article/edit/<%= article.id %>" method="POST">
-   <div class="form-group mb-4">
-      <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" placeholder="title" spellcheck="false" name="title"
-         value="<%= article.title %>" required>
-   </div>
+<div class="input-form">
+   <label for="title">Title</label>
+   <input type="text" id="title" placeholder="enter title" autocomplete="off" name="title" value="<%= article.title %>"
+      autofocus required>
+</div>
 
-   <div class="form-group mb-4">
-      <label for="tag">Tags</label>
-      <input type="text" class="form-control" id="tag" placeholder="category" spellcheck="false" name="tags"
-         value="<%= article.tags %>" required>
-   </div>
+<div class="input-form">
+   <label for="tag">Tag</label>
+   <input type="text" id="tag" placeholder="enter tag" autocomplete="off" name="tags" value="<%= article.tags %>"
+      required>
+</div>
 
-   <div class="form-group mb-4">
-      <label for="textarea">Description</label>
-      <textarea class="form-control" id="textarea" rows="7" placeholder="description..." spellcheck="false"
-         name="description" required><%= article.description %></textarea>
-   </div>
+<div class="input-form">
+   <label for="markdwon">Markdown</label>
+   <textarea id="markdwon" rows=" 45" placeholder="body markdown..." name="markdown"
+      required><%= article.markdown %></textarea>
+</div>
 
-   <div class="form-group">
-      <label for="article">Markdown</label>
-      <textarea class="form-control" id="article" rows="25" placeholder="body markdown..." spellcheck="false"
-         name="markdown" required><%= article.markdown %></textarea>
-   </div>
-
-   <button type="submit" class="btn btn-outline-dark btn-block mb-3 mt-5 text-monospace">Save</button>
-   <hr>
-   <a href="/" class="btn btn-outline-danger btn-block mt-3 text-monospace">Cancel</a>
-</form>
+<button type="submit">Save Article</button>
+<hr>
+<a href="/">Cancel</a>
