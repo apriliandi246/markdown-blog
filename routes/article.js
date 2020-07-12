@@ -88,8 +88,8 @@ function saveArticleAndRedirect() {
    return async (req, res) => {
       let article = req.article;
 
-      article.title = req.body.title;
-      article.tags = req.body.tags.split(',');
+      article.title = req.body.title.charAt(0).toUpperCase() + req.body.title.slice(1);
+      article.tags = req.body.tags.toLowerCase().split(',');
       article.markdown = req.body.markdown;
 
       try {
