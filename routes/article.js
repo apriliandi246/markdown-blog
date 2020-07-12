@@ -90,7 +90,6 @@ function saveArticleAndRedirect() {
 
       article.title = req.body.title;
       article.tags = req.body.tags.split(',');
-      article.description = req.body.description;
       article.markdown = req.body.markdown;
 
       try {

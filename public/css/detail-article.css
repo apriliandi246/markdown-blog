@@ -1,0 +1,47 @@
+body {
+   color: white;
+   font-family: Ubuntu;
+}
+
+.container {
+   width: 850px;
+   margin: 0 auto;
+   margin-top: 180px;
+}
+
+.head h1.title {
+   font-size: 38px;
+   line-height: 46px;
+}
+
+.head p.date {
+   font-size: 19px;
+   color: cadetblue;
+   margin: 20px 0 20px 0;
+   font-family: monospace;
+}
+
+.head .tag {
+   float: left;
+   width: 110px;
+   padding: 6px;
+   color: black;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+   margin-right: 20px;
+   letter-spacing: 1px;
+   font-family: monospace;
+   background-color: yellow;
+}
+
+.article-body {
+   margin: 113px 0 70px 0;
+}
+
+.article-body p {
+   font-size: 21px;
+   word-spacing: 3px;
+   line-height: 28px;
+   margin-bottom: 35px;
+}

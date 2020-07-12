@@ -36,13 +36,14 @@ p.published {
 
 .tag {
    float: left;
-   width: 100px;
+   width: 110px;
    padding: 6px;
    color: black;
    font-size: 15px;
    font-weight: bold;
    text-align: center;
    margin-right: 20px;
+   letter-spacing: 1px;
    font-family: monospace;
    background-color: yellow;
 }
