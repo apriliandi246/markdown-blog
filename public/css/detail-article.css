@@ -39,54 +39,99 @@ body {
    margin: 113px 0 70px 0;
 }
 
+
+/* line tag */
+.article-body hr {
+   margin-bottom: 40px;
+}
+
+
+/* paragraph tag */
 .article-body p {
    font-size: 20px;
    word-spacing: 3px;
    line-height: 28px;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
+
+/* link tag */
+.article-body a {
+   color: white;
+   transition: 0.1s;
+}
+
+.article-body a:hover {
+   color: blueviolet;
+}
+
+
+/* heading tag */
 .article-body h1 {
    font-size: 32px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body h2 {
    font-size: 24px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body h3 {
    font-size: 18.72px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body h4 {
    font-size: 16px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body h5 {
    font-size: 13.28px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body h6 {
    font-size: 10.72px;
    font-weight: bolder;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
+
+/* list tag */
+.article-body ul,
+ol {
+   margin-left: 25px;
+   margin-bottom: 40px;
+}
+
+.article-body ul li {
+   font-size: 20px;
+   list-style: disc;
+   word-spacing: 3px;
+   line-height: 28px;
+}
+
+.article-body ol li {
+   font-size: 20px;
+   line-height: 28px;
+   word-spacing: 3px;
+   list-style: decimal;
+}
+
+
+/* blockquote tag */
 .article-body blockquote {
    padding: 15px;
-   line-height: 33px;
+   line-height: 30px;
    font-style: italic;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
    border-left: 10px solid #38444d;
    background-color: rgb(25, 39, 52);
    quotes: "\201C""\201D""\2018""\2019";
@@ -114,9 +159,11 @@ body {
    font-style: italic;
 }
 
+
+/* table tag */
 .article-body table {
    margin: auto;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
 }
 
 .article-body table,
@@ -126,40 +173,28 @@ td {
    padding: 13px;
    font-size: 20px;
    word-spacing: 3px;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
    border: 1px solid white;
 }
 
-.article-body ul,
-ol {
-   margin-left: 25px;
-   margin-bottom: 35px;
-}
 
-.article-body ul li {
-   font-size: 20px;
-   list-style: disc;
-   word-spacing: 3px;
-   line-height: 28px;
-}
-
-.article-body ol li {
-   font-size: 20px;
-   line-height: 28px;
-   word-spacing: 3px;
-   list-style: decimal;
+/* code tag */
+.article-body pre code {
+   padding: 15px;
 }
 
 .article-body pre,
 code,
 span {
-   font-size: 18px;
+   font-size: 17px;
    line-height: 25px;
    border-radius: 6px;
-   margin-bottom: 35px;
+   margin-bottom: 40px;
    font-family: monospace;
 }
 
+
+/* image tag */
 .article-body p img {
    width: 550px;
    height: 550px;
@@ -167,13 +202,4 @@ span {
    border-radius: 6px;
    margin: 0 auto 35px auto;
    border: 10px solid #38444d;
-}
-
-.article-body a {
-   color: white;
-   transition: 0.1s;
-}
-
-.article-body a:hover {
-   color: blueviolet;
 }
