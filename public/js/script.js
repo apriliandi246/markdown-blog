@@ -3,3 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
       hljs.highlightBlock(block);
    });
 });
+
+const link = document.querySelectorAll('.article-body a');
+
+for (let i = 0; i < link.length - 1; i++) {
+   link[i].target = '_blank';
+}

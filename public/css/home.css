@@ -68,8 +68,8 @@ hr {
 }
 
 .tags ul li {
-   list-style: square;
    margin-top: 15px;
+   list-style: square;
    margin-bottom: 35px;
    font-family: monospace;
 }
