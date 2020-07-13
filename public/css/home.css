@@ -19,7 +19,7 @@
 a.title {
    color: white;
    font-size: 30px;
-   line-height: 45px;
+   line-height: 40px;
    text-decoration: none;
    transition: .1s;
 }
@@ -92,7 +92,7 @@ hr {
 /* No article */
 
 h1.no-article {
-   font-size: 27px;
-   margin-top: 100px;
+   font-size: 25px;
+   margin-top: 60px;
    font-family: monospace;
 }

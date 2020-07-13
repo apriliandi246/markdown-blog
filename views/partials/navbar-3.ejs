@@ -3,7 +3,11 @@
       <div class="logo"></div>
    </a>
 
-   <ul>
-      <li><a href="/article/edit/<%= article.id %>">Edit</a></li>
-   </ul>
+   <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+         <a href="/article/edit/<%= article.id %>">Edit Article</a>
+         <a href="#">Delete Article</a>
+      </div>
+   </div>
 </nav>
