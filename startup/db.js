@@ -1,11 +1,12 @@
 'use strict';
 
 
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 
 module.exports = () => {
-   mongoose.connect('mongodb://localhost/project-2', {
+   mongoose.connect(process.env.DB, {
       useCreateIndex: true,
       useNewUrlParser: true,
       useFindAndModify: true,

@@ -40,6 +40,9 @@ body {
 }
 
 
+
+/* ! STYLING TAGS HTML FROM MARKDOWN */
+
 /* line tag */
 .article-body hr {
    margin-bottom: 40px;
@@ -203,3 +206,5 @@ span {
    margin: 0 auto 35px auto;
    border: 10px solid #38444d;
 }
+
+/* ! STYLING TAGS HTML FROM MARKDOWN */
