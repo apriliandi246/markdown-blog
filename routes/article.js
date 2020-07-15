@@ -1,8 +1,8 @@
 'use strict';
 
 
-const moment = require('moment');
 const express = require('express');
+const Time = require('../helper/time');
 const Article = require('../models/article');
 const router = express.Router();
 
@@ -62,29 +62,26 @@ router.get('/tag/:tag', async (req, res) => {
 // post new article
 router.post('/new', (req, res, next) => {
    req.article = new Article();
-
    next();
-}, saveArticleAndRedirect());
+}, saveArticle());
 
 
 // edit article
 router.put('/edit/:id', async (req, res, next) => {
    req.article = await Article.findById(req.params.id);
-
    next();
-}, saveArticleAndRedirect());
+}, saveArticle());
 
 
 // delete article the article
 router.delete('/delete/:id', async (req, res) => {
    await Article.findByIdAndDelete(req.params.id)
-
    res.redirect('/');
 });
 
 
 // function for post and put article
-function saveArticleAndRedirect() {
+function saveArticle() {
    return async (req, res) => {
       let article = req.article;
 
@@ -93,7 +90,7 @@ function saveArticleAndRedirect() {
       article.markdown = req.body.markdown;
 
       try {
-         article = await article.save();
+         await article.save();
          res.redirect(`/article/detail/${article.slug}`);
 
       } catch (e) {
@@ -104,7 +101,8 @@ function saveArticleAndRedirect() {
 
 
 function formatDate(date) {
-   return moment(date).format('ll');
+   const time = new Time(date);
+   return time.format('medium');
 }
 
 

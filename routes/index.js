@@ -1,8 +1,8 @@
 'use strict';
 
 
-const moment = require('moment');
 const express = require('express');
+const Time = require('../helper/time');
 const Article = require('../models/article');
 const router = express.Router();
 
@@ -21,7 +21,8 @@ router.get('/', async (req, res) => {
 
 
 function formatDate(date) {
-   return moment(date).format('ll');
+   const time = new Time(date);
+   return time.format('medium');
 }
 
 
