@@ -1,8 +1,8 @@
 .container {
    width: 900px;
-   color: whitesmoke;
+   color: white;
    font-family: Ubuntu;
-   margin: 150px auto 40px auto;
+   margin: 170px auto 40px auto;
    display: flex;
    justify-content: center;
 }

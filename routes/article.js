@@ -90,7 +90,7 @@ function saveArticle() {
       article.markdown = req.body.markdown;
 
       try {
-         await article.save();
+         article = await article.save();
          res.redirect(`/article/detail/${article.slug}`);
 
       } catch (e) {
