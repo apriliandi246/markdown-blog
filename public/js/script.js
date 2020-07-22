@@ -14,15 +14,40 @@ for (let i = 0; i < link.length - 1; i++) {
 }
 
 
-// delete article menu and make modal
+// dropdown and modal
 const modal = document.querySelector('.modal-delete');
+const dropdownBtn = document.querySelector('button.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+const modalBtnCancel = document.querySelector('.modal-delete .modal .modal-footer button.cancel-btn');
+const modalBtnDelete = document.querySelector('nav .dropdown .dropdown-content button.delete-article');
+
+dropdownBtn.addEventListener('click', () => {
+   if (dropdownContent.style.display === '' || dropdownContent.style.display === 'none') {
+      setStatusDisplay(dropdownContent, 'block');
+      setElementColor(dropdownBtn, 'blueviolet');
+   } else {
+      setStatusDisplay(dropdownContent, 'none');
+      setElementColor(dropdownBtn, 'white');
+   }
+});
 
 // show the modal
-document.querySelector('nav .dropdown .dropdown-content button.delete-article').addEventListener('click', () => {
-   modal.style.display = 'block';
+modalBtnDelete.addEventListener('click', () => {
+   setStatusDisplay(dropdownContent, 'none');
+   setStatusDisplay(modal, 'block');
+   setElementColor(dropdownBtn, 'white');
 });
 
 // hide the modal
-document.querySelector('.modal-delete .modal .modal-footer button.cancel-btn').addEventListener('click', () => {
-   modal.style.display = 'none';
+modalBtnCancel.addEventListener('click', () => {
+   setStatusDisplay(modal, 'none');
 });
+
+
+function setStatusDisplay(element, status) {
+   element.style.display = status;
+}
+
+function setElementColor(element, color) {
+   element.style.color = color
+}

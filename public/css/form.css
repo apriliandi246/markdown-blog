@@ -21,44 +21,38 @@ form .input-form label {
 form .input-form input {
    width: 100%;
    border: none;
+   color: white;
    padding: 12px;
    outline: none;
    display: block;
+   transition: .2s;
    font-size: 17px;
    margin-top: 15px;
-   color: whitesmoke;
    box-sizing: border-box;
    background-color: rgb(37, 51, 65);
-   transition: .2s;
-}
-
-form .input-form input:focus {
-   background-color: #38444d;
-}
-
-form .input-form input::placeholder {
-   font-family: monospace;
 }
 
 form .input-form textarea {
    width: 100%;
    border: none;
+   color: white;
    padding: 12px;
    outline: none;
    display: block;
    font-size: 17px;
+   transition: .2s;
    margin-top: 15px;
-   color: whitesmoke;
    white-space: pre-line;
    box-sizing: border-box;
    background-color: rgb(37, 51, 65);
-   transition: .2s;
 }
 
+form .input-form input:focus,
 form .input-form textarea:focus {
    background-color: #38444d;
 }
 
+form .input-form input::placeholder,
 form .input-form textarea::placeholder {
    font-family: monospace;
 }
@@ -71,16 +65,12 @@ form button {
    cursor: pointer;
    font-size: 18px;
    margin-top: 45px;
+   transition: 0.2s;
    color: whitesmoke;
    margin-bottom: 10px;
    font-family: monospace;
    box-sizing: border-box;
    background-color: rgb(37, 51, 65);
-   transition: 0.2s;
-}
-
-form button:hover {
-   background-color: #38444d;
 }
 
 form a {
@@ -99,6 +89,7 @@ form a {
    background-color: rgb(37, 51, 65);
 }
 
+form button:hover,
 form a:hover {
    background-color: #38444d;
 }

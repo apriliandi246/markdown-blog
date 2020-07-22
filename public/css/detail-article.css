@@ -34,6 +34,7 @@ body {
    margin-right: 20px;
    letter-spacing: 1px;
    font-family: monospace;
+   text-transform: lowercase;
    background-color: yellow;
 }
 
@@ -51,12 +52,20 @@ body {
 }
 
 
-/* paragraph tag */
+/* paragraph / text tag */
 .article-body p {
    font-size: 20px;
    word-spacing: 3px;
    line-height: 28px;
    margin-bottom: 40px;
+}
+
+strong {
+   font-weight: bold;
+}
+
+em {
+   font-style: italic;
 }
 
 
@@ -112,7 +121,7 @@ body {
 /* list tag */
 .article-body ul,
 ol {
-   margin-left: 25px;
+   margin-left: 40px;
    margin-bottom: 40px;
 }
 
@@ -206,7 +215,7 @@ span {
    display: block;
    border-radius: 6px;
    margin: 0 auto 35px auto;
-   border: 10px solid #38444d;
+   border: 5px solid #38444d;
 }
 
 /* ! STYLING TAGS HTML FROM MARKDOWN */
@@ -259,11 +268,11 @@ span {
    padding: 10px;
    cursor: pointer;
    font-size: 16px;
+   transition: 0.2s;
    margin-right: 27px;
    color: whitesmoke;
    font-family: monospace;
    background-color: rgb(75, 96, 117);
-   transition: 0.2s;
 }
 
 .modal .modal-footer::after {

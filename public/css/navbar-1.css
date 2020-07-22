@@ -9,24 +9,24 @@ nav {
    bottom: 0;
    height: 65px;
    z-index: 9999;
+   display: flex;
    position: fixed;
    overflow: hidden;
    align-items: center;
+   justify-content: space-around;
    background-color: rgb(21, 32, 43);
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.2);
-   display: flex;
-   justify-content: space-around;
 }
 
 nav .logo {
    width: 65px;
    height: 65px;
+   transition: 0.2s;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: -1px 2px;
    background-image: url(../../img/logo.png);
    box-shadow: 0 0 1px 1px rgba(64, 74, 77, 0.2);
-   transition: 0.2s;
 }
 
 nav .logo:hover {
@@ -36,11 +36,11 @@ nav .logo:hover {
 nav ul li a {
    color: white;
    font-size: 22px;
+   transition: 0.1s;
    font-weight: bold;
    letter-spacing: 3px;
    text-decoration: none;
    font-family: monospace;
-   transition: 0.1s;
 }
 
 nav ul li a:hover {

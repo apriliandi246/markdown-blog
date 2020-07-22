@@ -12,7 +12,7 @@ router.get('/new', (req, res) => {
    res.render('article/new-article', {
       article: new Article
    });
-})
+});
 
 
 // detail article page
@@ -85,7 +85,7 @@ function saveArticle() {
    return async (req, res) => {
       let article = req.article;
 
-      article.title = req.body.title.charAt(0).toUpperCase() + req.body.title.slice(1);
+      article.title = req.body.title;
       article.tags = req.body.tags.toLowerCase().split(',');
       article.markdown = req.body.markdown;
 
