@@ -125,18 +125,12 @@ ol {
    margin-bottom: 40px;
 }
 
-.article-body ul li {
+.article-body ul li,
+.article-body ol li {
    font-size: 20px;
    list-style: disc;
    word-spacing: 3px;
    line-height: 28px;
-}
-
-.article-body ol li {
-   font-size: 20px;
-   line-height: 28px;
-   word-spacing: 3px;
-   list-style: decimal;
 }
 
 
@@ -210,12 +204,8 @@ span {
 
 /* image tag */
 .article-body p img {
-   width: 550px;
-   height: 550px;
    display: block;
-   border-radius: 6px;
-   margin: 0 auto 35px auto;
-   border: 5px solid #38444d;
+   margin: 10px auto 40px auto;
 }
 
 /* ! STYLING TAGS HTML FROM MARKDOWN */
