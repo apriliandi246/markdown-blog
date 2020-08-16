@@ -7,44 +7,44 @@ form {
 }
 
 form .input-form {
-   color: black;
+   color: #000000;
    margin-top: 32px;
 }
 
 form .input-form label {
    font-size: 20px;
    font-weight: 520;
-   color: whitesmoke;
+   color: #f5f5f5;
    font-family: monospace;
 }
 
 form .input-form input {
    width: 100%;
    border: none;
-   color: white;
    padding: 12px;
    outline: none;
+   color: #ffffff;
    display: block;
    transition: .2s;
    font-size: 17px;
    margin-top: 15px;
    box-sizing: border-box;
-   background-color: rgb(37, 51, 65);
+   background-color: #253341;
 }
 
 form .input-form textarea {
    width: 100%;
    border: none;
-   color: white;
    padding: 12px;
    outline: none;
+   color: #ffffff;
    display: block;
    font-size: 17px;
    transition: .2s;
    margin-top: 15px;
    white-space: pre-line;
    box-sizing: border-box;
-   background-color: rgb(37, 51, 65);
+   background-color: #253341;
 }
 
 form .input-form input:focus,
@@ -62,15 +62,15 @@ form button {
    border: none;
    outline: none;
    padding: 10px;
-   cursor: pointer;
+   color: #f5f5f5;
    font-size: 18px;
-   margin-top: 45px;
+   cursor: pointer;
    transition: 0.2s;
-   color: whitesmoke;
+   margin-top: 45px;
    margin-bottom: 10px;
    font-family: monospace;
    box-sizing: border-box;
-   background-color: rgb(37, 51, 65);
+   background-color: #253341;
 }
 
 form a {
@@ -79,14 +79,14 @@ form a {
    padding: 11px;
    outline: none;
    display: block;
+   color: #f5f5f5;
    font-size: 18px;
    margin-top: 16px;
    text-align: center;
-   color: whitesmoke;
    text-decoration: none;
    font-family: monospace;
    box-sizing: border-box;
-   background-color: rgb(37, 51, 65);
+   background-color: #253341;
 }
 
 form button:hover,
@@ -95,5 +95,5 @@ form a:hover {
 }
 
 form hr {
-   border: 1px solid rgb(37, 51, 65);
+   border: 1px solid #253341;
 }

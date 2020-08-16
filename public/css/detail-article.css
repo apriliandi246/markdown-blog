@@ -1,5 +1,5 @@
 body {
-   color: white;
+   color: #ffffff;
    font-family: Ubuntu;
 }
 
@@ -13,12 +13,11 @@ body {
    font-size: 40px;
    line-height: 47px;
    font-weight: bolder;
-   text-transform: capitalize;
 }
 
 .head p.date {
    font-size: 19px;
-   color: cadetblue;
+   color: #5f9ea0;
    margin: 20px 0 20px 0;
    font-family: monospace;
 }
@@ -27,7 +26,7 @@ body {
    float: left;
    width: 110px;
    padding: 6px;
-   color: black;
+   color: #000000;
    font-size: 15px;
    font-weight: bold;
    text-align: center;
@@ -35,7 +34,7 @@ body {
    letter-spacing: 1px;
    font-family: monospace;
    text-transform: lowercase;
-   background-color: yellow;
+   background-color: #ffff00;
 }
 
 .article-body {
@@ -71,12 +70,12 @@ em {
 
 /* link tag */
 .article-body a {
-   color: white;
+   color: #ffffff;
    transition: 0.1s;
 }
 
 .article-body a:hover {
-   color: blueviolet;
+   color: #8a2be2;
 }
 
 
@@ -146,7 +145,7 @@ ol {
 }
 
 .article-body blockquote:before {
-   color: white;
+   color: #ffffff;
    font-size: 3em;
    line-height: 0.1em;
    content: open-quote;
@@ -155,7 +154,7 @@ ol {
 }
 
 .article-body blockquote:after {
-   color: #ccc;
+   color: #cccccc;
    font-size: 3em;
    line-height: 0.1em;
    content: close-quote;
@@ -182,7 +181,7 @@ td {
    font-size: 20px;
    word-spacing: 3px;
    margin-bottom: 40px;
-   border: 3px solid white;
+   border: 3px solid #ffffff;
 }
 
 
@@ -222,7 +221,7 @@ span {
    display: none;
    position: fixed;
    box-sizing: border-box;
-   background-color: rgba(0, 0, 0, .6);
+   background-color: #00000099;
 }
 
 .modal {
@@ -231,8 +230,8 @@ span {
    color: white;
    margin: 15% auto;
    font-family: monospace;
-   background-color: rgb(41, 47, 54);
-   border: 2px solid rgba(202, 186, 186, .3);
+   background-color: #292f36;
+   border: 2px solid #cababa4d;
 }
 
 .modal .modal-head {
@@ -256,13 +255,13 @@ span {
    border: none;
    outline: none;
    padding: 10px;
-   cursor: pointer;
+   color: #f5f5f5;
    font-size: 16px;
+   cursor: pointer;
    transition: 0.2s;
    margin-right: 27px;
-   color: whitesmoke;
    font-family: monospace;
-   background-color: rgb(75, 96, 117);
+   background-color: #4b6075;
 }
 
 .modal .modal-footer::after {

@@ -1,7 +1,7 @@
 .container {
    width: 900px;
    display: flex;
-   color: white;
+   color: #ffffff;
    font-family: Ubuntu;
    justify-content: center;
    margin: 170px auto 40px auto;
@@ -16,13 +16,12 @@
 }
 
 a.title {
-   color: white;
+   color: #ffffff;
    font-size: 29px;
    transition: .1s;
    line-height: 40px;
    font-weight: bolder;
    text-decoration: none;
-   text-transform: capitalize;
 }
 
 p.published {
@@ -35,7 +34,7 @@ p.published {
    float: left;
    width: 110px;
    padding: 6px;
-   color: black;
+   color: #000000;
    font-size: 15px;
    font-weight: bold;
    text-align: center;
@@ -43,12 +42,12 @@ p.published {
    letter-spacing: 1px;
    font-family: monospace;
    text-transform: lowercase;
-   background-color: yellow;
+   background-color: #ffff00;
 }
 
 hr {
    margin: 115px 0 50px 0;
-   border: 5px dashed whitesmoke;
+   border: 5px dashed #f5f5f5;
 }
 
 /* Article */
@@ -73,7 +72,7 @@ hr {
 }
 
 .tags ul li a {
-   color: white;
+   color: #ffffff;
    font-size: 20px;
    transition: .2s;
    letter-spacing: 1px;
@@ -95,5 +94,5 @@ h1.no-article {
 
 a.title:hover,
 .tags ul li a:hover {
-   color: blueviolet;
+   color: #8a2be2;
 }
