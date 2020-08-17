@@ -50,6 +50,7 @@ nav .logo:hover {
 }
 
 .dropdown-content {
+   z-index: 1;
    width: 160px;
    display: none;
    margin-top: 8px;
@@ -60,8 +61,8 @@ nav .logo:hover {
 
 .dropdown-content a {
    float: none;
-   color: #000000;
    display: block;
+   color: #000000;
    text-align: right;
    padding: 12px 16px;
    letter-spacing: 1px;
@@ -74,7 +75,7 @@ nav .logo:hover {
    float: right;
    border: none;
    outline: none;
-   color: black;
+   color: #000000;
    cursor: pointer;
    font-size: 17px;
    padding: 12px 16px;
