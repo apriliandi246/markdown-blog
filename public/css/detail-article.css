@@ -71,7 +71,7 @@ em {
 /* link tag */
 .article-body a {
    color: #ffffff;
-   transition: 0.1s;
+   transition: color 0.2s;
 }
 
 .article-body a:hover {
@@ -258,16 +258,10 @@ span {
    color: #f5f5f5;
    font-size: 16px;
    cursor: pointer;
-   transition: 0.2s;
    margin-right: 27px;
    font-family: monospace;
    background-color: #4b6075;
-}
-
-.modal .modal-footer::after {
-   content: "";
-   clear: both;
-   display: block;
+   transition: background-color 0.2s;
 }
 
 .modal .modal-footer button:hover {

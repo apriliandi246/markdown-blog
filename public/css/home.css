@@ -18,10 +18,10 @@
 a.title {
    color: #ffffff;
    font-size: 29px;
-   transition: .1s;
    line-height: 40px;
    font-weight: bolder;
    text-decoration: none;
+   transition: color 0.2s;
 }
 
 p.published {
@@ -74,11 +74,10 @@ hr {
 .tags ul li a {
    color: #ffffff;
    font-size: 20px;
-   transition: .2s;
    letter-spacing: 1px;
    text-decoration: none;
+   transition: color 0.2s;
 }
-
 
 /* TAGS */
 
@@ -90,7 +89,6 @@ h1.no-article {
    margin-top: 60px;
    font-family: monospace;
 }
-
 
 a.title:hover,
 .tags ul li a:hover {

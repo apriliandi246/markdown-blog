@@ -21,8 +21,8 @@ nav {
 nav .logo {
    width: 65px;
    height: 65px;
-   transition: 0.2s;
    background-size: cover;
+   transition: box-shadow 0.2s;
    background-repeat: no-repeat;
    background-position: -1px 2px;
    box-shadow: 0 0 1px 1px #404a4d33;
@@ -36,11 +36,11 @@ nav .logo:hover {
 nav ul li a {
    color: white;
    font-size: 22px;
-   transition: 0.1s;
    font-weight: bold;
    letter-spacing: 3px;
    text-decoration: none;
    font-family: monospace;
+   transition: color 0.2s;
 }
 
 nav ul li a:hover {
