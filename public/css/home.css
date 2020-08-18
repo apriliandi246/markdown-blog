@@ -25,7 +25,9 @@ a.title {
 }
 
 p.published {
+   color: #5f9ea0;
    font-size: 20px;
+   letter-spacing: 2px;
    margin: 19px 0 24px 0;
    font-family: monospace;
 }
@@ -35,12 +37,12 @@ p.published {
    width: 110px;
    padding: 6px;
    color: #000000;
-   font-size: 15px;
+   font-size: 17px;
    font-weight: bold;
    text-align: center;
    margin-right: 20px;
-   letter-spacing: 1px;
-   font-family: monospace;
+   letter-spacing: 2px;
+   font-family: sans-serif;
    text-transform: lowercase;
    background-color: #ffff00;
 }
