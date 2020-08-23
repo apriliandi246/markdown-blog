@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/navbar-1.css">
    <link rel="stylesheet" href="../css/home.css">
+   <script defer src="../js/collapse.js"></script>
    <title>Home</title>
 </head>
 
@@ -14,17 +15,20 @@
 
    <div class="container">
       <% if(articles.length > 0) { %>
-      <div class="tags">
-         <ul>
-            <li><a href="/article/tag/html">HTML</a></li>
-            <li><a href="/article/tag/css">CSS</a></li>
-            <li><a href="/article/tag/nodejs">Node.js</a></li>
-            <li><a href="/article/tag/reactjs">React.js</a></li>
-            <li><a href="/article/tag/mongodb">MongoDB</a></li>
-            <li><a href="/article/tag/markdown">Markdown</a></li>
-            <li><a href="/article/tag/javascript">Javascript</a></li>
-            <li><a href="/article/tag/expressjs">Express.js</a></li>
-         </ul>
+      <div class="collapse">
+         <button class="collapse-button">Choose tag<i class="collapse-icon">+</i></button>
+         <div class="collapse-content">
+            <ul>
+               <li><a href="/article/tag/html">HTML</a></li>
+               <li><a href="/article/tag/css">CSS</a></li>
+               <li><a href="/article/tag/nodejs">Node.js</a></li>
+               <li><a href="/article/tag/reactjs">React.js</a></li>
+               <li><a href="/article/tag/mongodb">MongoDB</a></li>
+               <li><a href="/article/tag/markdown">Markdown</a></li>
+               <li><a href="/article/tag/javascript">Javascript</a></li>
+               <li><a href="/article/tag/expressjs">Express.js</a></li>
+            </ul>
+         </div>
       </div>
 
       <div class="articles">

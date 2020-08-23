@@ -20,7 +20,7 @@ router.get('/detail/:slug', async (req, res) => {
    const article = await Article.findOne({
       slug: req.params.slug
    });
-   console.log(article);
+
    if (article === null) {
       res.redirect('/');
 
@@ -46,7 +46,7 @@ router.get('/edit/:id', async (req, res) => {
 // get article tag
 router.get('/tag/:tag', async (req, res) => {
    const articles = await Article.find({
-      tags: { $all: [req.params.tag] }
+      tag: req.params.tag
    }).sort({
       createdAt: 'desc'
    });

@@ -14,7 +14,7 @@ nav {
    overflow: hidden;
    align-items: center;
    background-color: #15202b;
-   justify-content: space-around;
+   justify-content: space-evenly;
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.2);
 }
 
