@@ -18,8 +18,8 @@ const articleSchema = new mongoose.Schema({
       type: Date,
       default: Date.now
    },
-   tags: {
-      type: [String],
+   tag: {
+      type: String,
       required: true
    },
    markdown: {

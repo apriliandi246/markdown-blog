@@ -57,6 +57,26 @@ form .input-form textarea::placeholder {
    font-family: monospace;
 }
 
+select {
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 12px;
+   color: #ffffff;
+   cursor: pointer;
+   font-size: 16px;
+   -moz-appearance: none;
+   box-sizing: border-box;
+   font-family: monospace;
+   -webkit-appearance: none;
+   background-color: #253341;
+   transition: background-color 0.2s;
+}
+
+select:hover {
+   background-color: #38444d;
+}
+
 form button {
    width: 100%;
    border: none;

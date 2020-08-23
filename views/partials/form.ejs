@@ -5,8 +5,16 @@
 </div>
 
 <div class="input-form">
-   <label for="tag">Tag</label>
-   <input type="text" id="tag" placeholder="tags" autocomplete="off" name="tags" value="<%= article.tags %>" required>
+   <select name="tag" required>
+      <option selected hidden>Tags</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="nodejs">Node.js</option>
+      <option value="reactjs">React.js</option>
+      <option value="mongodb">MongoDB</option>
+      <option value="javascript">Javascript</option>
+      <option value="expressjs">Express.js</option>
+   </select>
 </div>
 
 <div class="input-form">

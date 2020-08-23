@@ -34,15 +34,14 @@ p.published {
 
 .tag {
    float: left;
-   width: 110px;
    padding: 6px;
    color: #000000;
-   font-size: 17px;
+   font-size: 16px;
    font-weight: bold;
    text-align: center;
    margin-right: 20px;
-   letter-spacing: 2px;
-   font-family: sans-serif;
+   letter-spacing: 1px;
+   font-family: monospace;
    text-transform: lowercase;
    background-color: #ffff00;
 }

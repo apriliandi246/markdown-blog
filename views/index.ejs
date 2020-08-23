@@ -32,9 +32,7 @@
          <div class="article">
             <a href="/article/detail/<%= article.slug %>" class="title"><%= article.title %></a>
             <p class="published"><%= formatDate(article.createdAt) %></p>
-            <% article.tags.forEach((tag) => { %>
-            <div class="tag"><%= tag %></div>
-            <% }) %>
+            <div class="tag"><%= article.tag %></div>
             <hr>
          </div>
          <% }) %>

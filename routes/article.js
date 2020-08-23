@@ -20,7 +20,7 @@ router.get('/detail/:slug', async (req, res) => {
    const article = await Article.findOne({
       slug: req.params.slug
    });
-
+   console.log(article);
    if (article === null) {
       res.redirect('/');
 
@@ -86,7 +86,7 @@ function saveArticle() {
       let article = req.article;
 
       article.title = req.body.title;
-      article.tags = req.body.tags.toLowerCase().split(',');
+      article.tag = req.body.tag;
       article.markdown = req.body.markdown;
 
       try {

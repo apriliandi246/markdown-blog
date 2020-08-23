@@ -40,9 +40,7 @@
       <div class="head">
          <h1 class="title"><%= article.title %></h1>
          <p class="date"><%= formatDate(article.createdAt) %></p>
-         <% article.tags.forEach((tag) => { %>
-         <div class="tag"><%= tag %></div>
-         <% }) %>
+         <div class="tag"><%= article.tag %></div>
       </div>
 
       <div class="article-body">
