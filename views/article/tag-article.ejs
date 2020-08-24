@@ -34,7 +34,10 @@
       </div>
 
       <% } else { %>
-      <h1 class="no-article">Article with tag "<%= tag %>" doesn't exist right now 😅</h1>
+      <div class="tag-not-found">
+         <h1 class="no-article">Article with tag "<%= tag %>" doesn't exist right now 😅</h1>
+         <a href="/" class="home-btn">Home</a>
+      </div>
       <% } %>
    </div>
 </body>
