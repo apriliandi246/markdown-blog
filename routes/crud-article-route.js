@@ -1,8 +1,6 @@
 'use strict';
 
-
 const express = require('express');
-const Time = require('../helper/time');
 const Article = require('../models/article');
 const router = express.Router();
 
@@ -15,46 +13,12 @@ router.get('/new', (req, res) => {
 });
 
 
-// detail article page
-router.get('/detail/:slug', async (req, res) => {
-   const article = await Article.findOne({
-      slug: req.params.slug
-   });
-
-   if (article === null) {
-      res.redirect('/');
-
-   } else {
-      res.render('article/detail-article', {
-         article,
-         formatDate
-      });
-   }
-});
-
-
 // get edit article page
 router.get('/edit/:id', async (req, res) => {
    const article = await Article.findById(req.params.id);
 
    res.render('article/edit-article', {
       article
-   });
-});
-
-
-// get article tag
-router.get('/tag/:tag', async (req, res) => {
-   const articles = await Article.find({
-      tag: req.params.tag
-   }).sort({
-      createdAt: 'desc'
-   });
-
-   res.render('article/tag-article', {
-      articles,
-      formatDate,
-      tag: req.params.tag
    });
 });
 
@@ -91,18 +55,12 @@ function saveArticle() {
 
       try {
          article = await article.save();
-         res.redirect(`/article/detail/${article.slug}`);
+         res.redirect(`/${article.slug}`);
 
       } catch (e) {
          res.redirect('/');
       }
    }
-}
-
-
-function formatDate(date) {
-   const time = new Time(date);
-   return time.format('medium');
 }
 
 

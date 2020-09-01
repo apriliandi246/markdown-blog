@@ -1,6 +1,5 @@
 'use strict';
 
-
 const marked = require('marked');
 const slugify = require('slugify');
 const { JSDOM } = require('jsdom');
@@ -39,6 +38,8 @@ const articleSchema = new mongoose.Schema({
 
 
 articleSchema.pre('validate', function (next) {
+   const allowedTags = ['hr', 'p', 'strong', 'em', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'blockquote', 'table', 'th', 'tr', 'td', 'pre', 'code', 'span', 'img'];
+
    if (this.title) {
       const title = slugify(this.title, {
          lower: true,
@@ -49,7 +50,7 @@ articleSchema.pre('validate', function (next) {
    }
 
    if (this.markdown) {
-      this.sanitizedHtml = dompurify.sanitize(marked(this.markdown));
+      this.sanitizedHtml = dompurify.sanitize(marked(this.markdown), { ALLOWED_TAGS: allowedTags }, { ALLOWED_ATTR: [''] });
    }
 
    next();

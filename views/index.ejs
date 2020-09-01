@@ -25,7 +25,7 @@
       <div class="articles">
          <% articles.forEach((article) => { %>
          <div class="article">
-            <a href="/article/detail/<%= article.slug %>" class="title"><%= article.title %></a>
+            <a href="/<%= article.slug %>" class="title"><%= article.title %></a>
             <p class="published"><%= formatDate(article.createdAt) %></p>
             <div class="tag"><%= article.tag %></div>
             <hr>

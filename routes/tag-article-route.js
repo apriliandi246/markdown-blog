@@ -6,15 +6,18 @@ const Article = require('../models/article');
 const router = express.Router();
 
 
-// main page
-router.get('/', async (req, res) => {
-   const articles = await Article.find().sort({
+// get article tag
+router.get('/:tag', async (req, res) => {
+   const articles = await Article.find({
+      tag: req.params.tag
+   }).sort({
       createdAt: 'desc'
    });
 
-   res.render('index', {
+   res.render('article/tag-article', {
       articles,
-      formatDate
+      formatDate,
+      tag: req.params.tag
    });
 });
 
