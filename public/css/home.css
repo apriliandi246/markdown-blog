@@ -1,3 +1,7 @@
+body {
+   overflow-x: hidden;
+}
+
 .container {
    width: 800px;
    color: #ffffff;
@@ -86,6 +90,8 @@
    border: 1px solid #38444d;
    background-color: #192734;
    padding: 45px 35px 25px 35px;
+   display: flex;
+   flex-direction: column;
 }
 
 .article__title {
@@ -141,6 +147,7 @@
 .no-article {
    font-size: 23px;
    font-weight: bolder;
+   line-height: 40px;
    margin: 180px 0 25px 0;
    font-family: monospace;
 }
@@ -155,4 +162,27 @@
 
 .home-btn:hover {
    color: #8a2be2;
+}
+
+
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 500px) {
+   .container {
+      width: 97%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .collapse__content ul {
+      flex-direction: column;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 846px) {
+   .container {
+      width: 92%;
+   }
 }

@@ -54,7 +54,7 @@ body {
    z-index: 1;
    width: 160px;
    display: none;
-   margin-top: 8px;
+   margin-top: 21px;
    margin-left: 5px;
    position: absolute;
    background-color: #fafafa;
@@ -88,4 +88,14 @@ body {
 .dropdown__link:hover,
 .dropdown__delete-button:hover {
    background-color: #dddddd;
+}
+
+
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 550px) {
+   .dropdown__content {
+      margin-left: -15px;
+   }
 }

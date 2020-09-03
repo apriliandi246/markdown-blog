@@ -14,7 +14,7 @@ body {
    overflow: hidden;
    align-items: center;
    background-color: #15202b;
-   justify-content: space-evenly;
+   justify-content: space-around;
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.2);
 }
 
@@ -35,9 +35,7 @@ body {
 
 .navbar__item {
    color: white;
-   font-size: 45px;
-   font-weight: bold;
-   letter-spacing: 3px;
+   font-size: 55px;
    text-decoration: none;
    font-family: monospace;
    transition: color 0.2s;

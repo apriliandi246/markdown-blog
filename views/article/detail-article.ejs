@@ -19,15 +19,17 @@
 
    <%- include('../partials/modal') %>
 
-   <div class="article">
-      <div class="article__head">
-         <h1 class="article-head__title"><%= article.title %></h1>
-         <p class="article-head__date"><%= formatDate(article.createdAt) %></p>
-         <div class="article-head__tag"><%= article.tag %></div>
-      </div>
+   <div class="container">
+      <div class="article">
+         <div class="article__head">
+            <h1 class="article-head__title"><%= article.title %></h1>
+            <p class="article-head__date"><%= formatDate(article.createdAt) %></p>
+            <div class="article-head__tag"><%= article.tag %></div>
+         </div>
 
-      <div class="article__body">
-         <%- article.sanitizedHtml %>
+         <div class="article__body">
+            <%- article.sanitizedHtml %>
+         </div>
       </div>
    </div>
 </body>

@@ -3,9 +3,13 @@ body {
    font-family: Ubuntu;
 }
 
-.article {
-   width: 850px;
+.container {
+   width: 840px;
    margin: 0 auto;
+}
+
+.article {
+   width: 100%;
    margin-top: 160px;
 }
 
@@ -204,7 +208,9 @@ span {
 
 /* image tag */
 .article__body p img {
+   height: auto;
    display: block;
+   max-width: 100%;
    margin: 10px auto 40px auto;
 }
 
@@ -269,4 +275,28 @@ span {
 .footer__cancel-button:hover,
 .footer__submit-button:hover {
    background-color: #38444d;
+}
+
+
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 500px) {
+   .container {
+      width: 97%;
+   }
+
+   .article {
+      margin-top: 120px;
+   }
+
+   .modal__body {
+      margin: 50% auto;
+   }
+}
+
+@media screen and (max-width: 846px) {
+   .container {
+      width: 92%;
+   }
 }
