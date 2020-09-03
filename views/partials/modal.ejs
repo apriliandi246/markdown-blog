@@ -1,0 +1,18 @@
+<div class="modal-delete">
+   <div class="modal">
+      <div class="modal-head">
+         <h1>Delete Article</h1>
+      </div>
+
+      <div class="modal-content">
+         Are you sure delete this article ??
+      </div>
+
+      <div class="modal-footer cf">
+         <button class="cancel-btn">Cancel</button>
+         <form action="/article/delete/<%= article.id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+         </form>
+      </div>
+   </div>
+</div>

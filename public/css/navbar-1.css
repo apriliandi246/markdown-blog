@@ -2,7 +2,7 @@ body {
    background-color: #15202b;
 }
 
-nav {
+.navbar {
    top: 0;
    left: 0;
    right: 0;
@@ -18,7 +18,7 @@ nav {
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.2);
 }
 
-nav .logo {
+.navbar__logo {
    width: 65px;
    height: 65px;
    background-size: cover;
@@ -29,13 +29,13 @@ nav .logo {
    background-image: url(../../img/logo.png);
 }
 
-nav .logo:hover {
+.navbar__logo:hover {
    box-shadow: 0 0 5px 5px rgba(64, 74, 77, 0.2);
 }
 
-nav ul li a {
+.navbar__item {
    color: white;
-   font-size: 22px;
+   font-size: 45px;
    font-weight: bold;
    letter-spacing: 3px;
    text-decoration: none;
@@ -43,6 +43,6 @@ nav ul li a {
    transition: color 0.2s;
 }
 
-nav ul li a:hover {
+.navbar__item:hover {
    color: #8a2be2;
 }

@@ -15,20 +15,15 @@
 
    <div class="container">
       <% if(articles.length > 0) { %>
-      <div class="collapse">
-         <button class="collapse-button">Choose tag<i class="collapse-icon">+</i></button>
-         <div class="collapse-content">
-            <%- include('./partials/tags') %>
-         </div>
-      </div>
+      <%- include('./partials/tags') %>
 
       <div class="articles">
          <% articles.forEach((article) => { %>
          <div class="article">
-            <a href="/<%= article.slug %>" class="title"><%= article.title %></a>
-            <p class="published"><%= formatDate(article.createdAt) %></p>
-            <div class="tag"><%= article.tag %></div>
-            <hr>
+            <a href="/<%= article.slug %>" class="article__title"><%= article.title %></a>
+            <p class="article__published"><%= formatDate(article.createdAt) %></p>
+            <div class="article__tag"><%= article.tag %></div>
+            <hr class="article__line">
          </div>
          <% }) %>
       </div>

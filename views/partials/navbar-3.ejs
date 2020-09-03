@@ -1,13 +1,11 @@
-<nav>
-   <a href="/">
-      <div class="logo"></div>
-   </a>
+<nav class="navbar">
+   <a href="/" class="navbar__logo"></a>
 
    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-         <a href="/article/edit/<%= article.id %>" class="edit-article">Edit Article</a>
-         <button class="delete-article">Delete Article</button>
+      <button class="dropdown__button">Menu</button>
+      <div class="dropdown__content">
+         <a href="/article/edit/<%= article.id %>" class="dropdown__link">Edit Article</a>
+         <button class="dropdown__delete-button">Delete Article</button>
       </div>
    </div>
 </nav>

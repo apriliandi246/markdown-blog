@@ -1,11 +1,11 @@
-const collapseButton = document.querySelector('.collapse-button');
-const icon = document.querySelector('.collapse-button .collapse-icon');
+const collapseButton = document.querySelector('.collapse__button');
+const icon = document.querySelector('.collapse-button__icon');
 
 
 collapseButton.addEventListener('click', () => {
    const collapseContent = collapseButton.nextElementSibling;
 
-   collapseButton.classList.toggle('active');
+   collapseButton.classList.toggle('collapse__button-active');
 
    if (collapseContent.style.display === 'block') {
       icon.innerText = '+';

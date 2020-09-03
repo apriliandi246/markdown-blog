@@ -2,7 +2,7 @@ body {
    background-color: #15202b;
 }
 
-nav {
+.navbar {
    top: 0;
    left: 0;
    right: 0;
@@ -17,7 +17,7 @@ nav {
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.3);
 }
 
-nav .logo {
+.navbar__logo {
    width: 65px;
    height: 65px;
    background-size: cover;
@@ -28,11 +28,12 @@ nav .logo {
    box-shadow: 0 0 1px 1px rgba(64, 74, 77, 0.2);
 }
 
-nav .logo:hover {
+.navbar__logo:hover {
    box-shadow: 0 0 5px 5px rgba(64, 74, 77, 0.2);
 }
 
-.dropdown .dropbtn {
+
+.dropdown__button {
    border: none;
    outline: none;
    color: #ffffff;
@@ -45,11 +46,11 @@ nav .logo:hover {
    background-color: inherit;
 }
 
-.dropdown .dropbtn:hover {
+.dropdown__button:hover {
    color: #8a2be2;
 }
 
-.dropdown-content {
+.dropdown__content {
    z-index: 1;
    width: 160px;
    display: none;
@@ -59,7 +60,7 @@ nav .logo:hover {
    background-color: #fafafa;
 }
 
-.dropdown-content a {
+.dropdown__link {
    float: none;
    display: block;
    color: #000000;
@@ -70,7 +71,7 @@ nav .logo:hover {
    transition: background-color 0.2s;
 }
 
-.dropdown-content button {
+.dropdown__delete-button {
    width: 100%;
    float: right;
    border: none;
@@ -84,7 +85,7 @@ nav .logo:hover {
    transition: background-color 0.2s;
 }
 
-.dropdown-content a:hover,
-.dropdown-content button:hover {
+.dropdown__link:hover,
+.dropdown__delete-button:hover {
    background-color: #dddddd;
 }

@@ -3,27 +3,27 @@ body {
    font-family: Ubuntu;
 }
 
-.container {
+.article {
    width: 850px;
    margin: 0 auto;
    margin-top: 160px;
 }
 
-.head h1.title {
+.article-head__title {
    font-size: 40px;
    line-height: 47px;
    font-weight: bolder;
 }
 
-.head p.date {
+.article-head__date {
    color: #5f9ea0;
    font-size: 19px;
    letter-spacing: 2px;
-   margin: 20px 0 20px 0;
+   margin: 20px 0 22px 0;
    font-family: monospace;
 }
 
-.head .tag {
+.article-head__tag {
    float: left;
    padding: 6px;
    color: #000000;
@@ -37,8 +37,8 @@ body {
    background-color: #ffff00;
 }
 
-.article-body {
-   margin: 113px 0 70px 0;
+.article__body {
+   margin: 100px 0 70px 0;
 }
 
 
@@ -46,13 +46,13 @@ body {
 /* ! STYLING TAGS HTML FROM MARKDOWN */
 
 /* line tag */
-.article-body hr {
+.article__body hr {
    margin-bottom: 40px;
 }
 
 
 /* paragraph / text tag */
-.article-body p {
+.article__body p {
    font-size: 20px;
    word-spacing: 3px;
    line-height: 29px;
@@ -60,58 +60,58 @@ body {
    letter-spacing: 0.5px;
 }
 
-strong {
+.article__body strong {
    font-weight: bold;
 }
 
-em {
+.article__body em {
    font-style: italic;
 }
 
 
 /* link tag */
-.article-body a {
+.article__body a {
    color: #ffffff;
    transition: color 0.2s;
 }
 
-.article-body a:hover {
+.article__body a:hover {
    color: #8a2be2;
 }
 
 
 /* heading tag */
-.article-body h1 {
+.article__body h1 {
    font-size: 32px;
    font-weight: bolder;
    margin-bottom: 40px;
 }
 
-.article-body h2 {
+.article__body h2 {
    font-size: 24px;
    font-weight: bolder;
    margin-bottom: 40px;
 }
 
-.article-body h3 {
+.article__body h3 {
    font-size: 18.72px;
    font-weight: bolder;
    margin-bottom: 40px;
 }
 
-.article-body h4 {
+.article__body h4 {
    font-size: 16px;
    font-weight: bolder;
    margin-bottom: 40px;
 }
 
-.article-body h5 {
+.article__body h5 {
    font-size: 13.28px;
    font-weight: bolder;
    margin-bottom: 40px;
 }
 
-.article-body h6 {
+.article__body h6 {
    font-size: 10.72px;
    font-weight: bolder;
    margin-bottom: 40px;
@@ -119,14 +119,14 @@ em {
 
 
 /* list tag */
-.article-body ul,
+.article__body ul,
 ol {
    margin-left: 40px;
    margin-bottom: 40px;
 }
 
-.article-body ul li,
-.article-body ol li {
+.article__body ul li,
+.article__body ol li {
    font-size: 20px;
    list-style: disc;
    word-spacing: 3px;
@@ -135,7 +135,7 @@ ol {
 
 
 /* blockquote tag */
-.article-body blockquote {
+.article__body blockquote {
    padding: 15px;
    line-height: 30px;
    font-style: italic;
@@ -145,7 +145,7 @@ ol {
    quotes: "\201C""\201D""\2018""\2019";
 }
 
-.article-body blockquote:before {
+.article__body blockquote:before {
    color: #ffffff;
    font-size: 3em;
    line-height: 0.1em;
@@ -154,7 +154,7 @@ ol {
    vertical-align: -0.4em;
 }
 
-.article-body blockquote:after {
+.article__body blockquote:after {
    color: #cccccc;
    font-size: 3em;
    line-height: 0.1em;
@@ -162,19 +162,19 @@ ol {
    vertical-align: -0.4em;
 }
 
-.article-body blockquote p {
+.article__body blockquote p {
    display: inline;
    font-style: italic;
 }
 
 
 /* table tag */
-.article-body table {
+.article__body table {
    margin: auto;
    margin-bottom: 40px;
 }
 
-.article-body table,
+.article__body table,
 th,
 tr,
 td {
@@ -187,11 +187,11 @@ td {
 
 
 /* code tag */
-.article-body pre code {
+.article__body pre code {
    padding: 15px;
 }
 
-.article-body pre,
+.article__body pre,
 code,
 span {
    font-size: 17px;
@@ -203,7 +203,7 @@ span {
 
 
 /* image tag */
-.article-body p img {
+.article__body p img {
    display: block;
    margin: 10px auto 40px auto;
 }

@@ -1,12 +1,12 @@
 // dropdown
-const dropdownBtn = document.querySelector('button.dropbtn');
-const dropdownContent = document.querySelector('.dropdown-content');
+const dropdownBtn = document.querySelector('.dropdown__button');
+const dropdownContent = document.querySelector('.dropdown__content');
 
 
 // modal
 const modal = document.querySelector('.modal-delete');
 const modalBtnCancel = document.querySelector('.modal-delete .modal .modal-footer button.cancel-btn');
-const modalBtnDelete = document.querySelector('nav .dropdown .dropdown-content button.delete-article');
+const modalBtnDelete = document.querySelector('.dropdown__delete-button');
 
 
 // show the dropdown

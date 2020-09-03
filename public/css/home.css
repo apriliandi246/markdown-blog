@@ -9,7 +9,7 @@
 
 /* TAGS */
 
-.collapse-button {
+.collapse__button {
    width: 100%;
    border: none;
    outline: none;
@@ -24,17 +24,17 @@
    transition: background-color 0.2s;
 }
 
-.collapse-button .collapse-icon {
+.collapse-button__icon {
    float: right;
    font-weight: bolder;
 }
 
-.active,
-.collapse-button:hover {
+.collapse__button-active,
+.collapse__button:hover {
    background-color: #38444d;
 }
 
-.collapse-content {
+.collapse__content {
    display: none;
    color: #ffffff;
    font-size: 20px;
@@ -48,18 +48,18 @@
    border-bottom: 1px solid #253341;
 }
 
-.collapse-content a {
+.collapse__content a {
    color: #ffffff;
    text-decoration: none;
    transition: color 0.3s, text-decoration 0.3s;
 }
 
-.collapse-content a:hover {
+.collapse__content a:hover {
    color: #8a2be2;
    text-decoration: underline;
 }
 
-.collapse-content ul {
+.collapse__content ul {
    display: flex;
    flex-wrap: wrap;
    margin-bottom: 25px;
@@ -67,12 +67,11 @@
    justify-content: center;
 }
 
-.collapse-content ul li {
+.collapse__content ul li {
    margin-top: 25px;
    margin-right: 25px;
    letter-spacing: 2px;
 }
-
 
 /* TAGS */
 
@@ -89,7 +88,7 @@
    padding: 45px 35px 25px 35px;
 }
 
-a.title {
+.article__title {
    color: #ffffff;
    font-size: 29px;
    line-height: 40px;
@@ -98,7 +97,11 @@ a.title {
    transition: color 0.2s;
 }
 
-p.published {
+.article__title:hover {
+   color: #8a2be2;
+}
+
+.article__published {
    color: #5f9ea0;
    font-size: 20px;
    letter-spacing: 2px;
@@ -106,7 +109,7 @@ p.published {
    font-family: monospace;
 }
 
-.tag {
+.article__tag {
    float: left;
    padding: 6px;
    color: #ffffff;
@@ -120,13 +123,9 @@ p.published {
    background-color: #51a97d;
 }
 
-hr {
+.article__line {
    margin: 115px 0 50px 0;
    border: 1px solid #253341;
-}
-
-a.title:hover {
-   color: #8a2be2;
 }
 
 /* Article */
@@ -139,14 +138,14 @@ a.title:hover {
    text-align: center;
 }
 
-h1.no-article {
+.no-article {
    font-size: 23px;
    font-weight: bolder;
    margin: 180px 0 25px 0;
    font-family: monospace;
 }
 
-a.home-btn {
+.home-btn {
    color: white;
    font-size: 23px;
    text-align: center;
@@ -154,6 +153,6 @@ a.home-btn {
    font-family: monospace;
 }
 
-a.home-btn:hover {
+.home-btn:hover {
    color: #8a2be2;
 }

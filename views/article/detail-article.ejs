@@ -17,33 +17,16 @@
 <body>
    <%- include('../partials/navbar-3') %>
 
-   <div class="modal-delete">
-      <div class="modal">
-         <div class="modal-head">
-            <h1>Delete Article</h1>
-         </div>
+   <%- include('../partials/modal') %>
 
-         <div class="modal-content">
-            Are you sure delete this article ??
-         </div>
-
-         <div class="modal-footer cf">
-            <button class="cancel-btn">Cancel</button>
-            <form action="/article/delete/<%= article.id %>?_method=DELETE" method="POST">
-               <button type="submit">Delete</button>
-            </form>
-         </div>
-      </div>
-   </div>
-
-   <div class="container">
-      <div class="head">
-         <h1 class="title"><%= article.title %></h1>
-         <p class="date"><%= formatDate(article.createdAt) %></p>
-         <div class="tag"><%= article.tag %></div>
+   <div class="article">
+      <div class="article__head">
+         <h1 class="article-head__title"><%= article.title %></h1>
+         <p class="article-head__date"><%= formatDate(article.createdAt) %></p>
+         <div class="article-head__tag"><%= article.tag %></div>
       </div>
 
-      <div class="article-body">
+      <div class="article__body">
          <%- article.sanitizedHtml %>
       </div>
    </div>
