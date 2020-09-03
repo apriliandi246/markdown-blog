@@ -213,7 +213,7 @@ span {
 
 /* Modal */
 
-.modal-delete {
+.modal {
    top: 0;
    left: 0;
    z-index: 2;
@@ -225,7 +225,7 @@ span {
    background-color: #00000099;
 }
 
-.modal {
+.modal__body {
    width: 400px;
    padding: 13px;
    color: #ffffff;
@@ -235,23 +235,24 @@ span {
    border: 2px solid #cababa4d;
 }
 
-.modal .modal-head {
+.modal-body__head {
    padding: 12px;
    font-size: 25px;
    font-weight: bolder;
 }
 
-.modal .modal-content {
+.modal-body__content {
    padding: 12px;
    font-size: 17px;
 }
 
-.modal .modal-footer {
+.modal-body__footer {
    padding: 12px;
    box-sizing: border-box;
 }
 
-.modal .modal-footer button {
+.footer__cancel-button,
+.footer__submit-button {
    float: left;
    border: none;
    outline: none;
@@ -265,6 +266,7 @@ span {
    transition: background-color 0.2s;
 }
 
-.modal .modal-footer button:hover {
+.footer__cancel-button:hover,
+.footer__submit-button:hover {
    background-color: #38444d;
 }

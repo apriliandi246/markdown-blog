@@ -1,24 +1,21 @@
-.container form {
+form {
+   width: 1100px;
    margin: 50px auto;
 }
 
-form {
-   width: 1100px;
-}
-
-form .input-form {
+.input-form {
    color: #000000;
    margin-top: 32px;
 }
 
-form .input-form label {
+.input-form__label {
    color: #f5f5f5;
    font-size: 20px;
    font-weight: 520;
    font-family: monospace;
 }
 
-form .input-form input {
+.input-form__input {
    width: 100%;
    border: none;
    padding: 12px;
@@ -32,7 +29,7 @@ form .input-form input {
    transition: background-color 0.2s;
 }
 
-form .input-form textarea {
+.input-form__textarea {
    width: 100%;
    border: none;
    padding: 12px;
@@ -47,13 +44,13 @@ form .input-form textarea {
    transition: background-color 0.2s;
 }
 
-form .input-form input:focus,
-form .input-form textarea:focus {
+.input-form__input:focus,
+.input-form__textarea:focus {
    background-color: #38444d;
 }
 
-form .input-form input::placeholder,
-form .input-form textarea::placeholder {
+.input-form__input::placeholder,
+.input-form__textarea::placeholder {
    font-family: monospace;
 }
 
@@ -77,7 +74,7 @@ select:hover {
    background-color: #38444d;
 }
 
-form button {
+.button-form {
    width: 100%;
    border: none;
    outline: none;
@@ -93,7 +90,7 @@ form button {
    transition: background-color 0.2s;
 }
 
-form a {
+.redirect-button-form {
    width: 100%;
    border: none;
    padding: 11px;
@@ -110,11 +107,11 @@ form a {
    transition: background-color 0.2s;
 }
 
-form button:hover,
-form a:hover {
+.button-form:hover,
+.redirect-button-form:hover {
    background-color: #38444d;
 }
 
-form hr {
+.form-line {
    border: 1px solid #253341;
 }

@@ -4,19 +4,20 @@ const dropdownContent = document.querySelector('.dropdown__content');
 
 
 // modal
-const modal = document.querySelector('.modal-delete');
-const modalBtnCancel = document.querySelector('.modal-delete .modal .modal-footer button.cancel-btn');
+const modal = document.querySelector('.modal');
+const modalBtnCancel = document.querySelector('.footer__cancel-button');
 const modalBtnDelete = document.querySelector('.dropdown__delete-button');
 
 
 // show the dropdown
 dropdownBtn.addEventListener('click', () => {
-   if (dropdownContent.style.display === '' || dropdownContent.style.display === 'none') {
-      setStatusDisplay(dropdownContent, 'block');
-      setElementColor(dropdownBtn, '#8a2be2');
-   } else {
+   if (dropdownContent.style.display === 'block') {
       setStatusDisplay(dropdownContent, 'none');
       setElementColor(dropdownBtn, '#ffffff');
+
+   } else {
+      setStatusDisplay(dropdownContent, 'block');
+      setElementColor(dropdownBtn, '#8a2be2');
    }
 });
 

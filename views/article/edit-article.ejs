@@ -13,7 +13,7 @@
    <%- include('../partials/navbar-2') %>
 
    <div class="container space-top-1">
-      <form action="/article/edit/<%= article.id %>?_method=PUT" method="POST" spellcheck="false">
+      <form action="/article/edit/<%= article.id %>?_method=PUT" method="POST" spellcheck="false" autocomplete="off">
          <%- include('../partials/form') %>
       </form>
    </div>

@@ -1,17 +1,15 @@
-<div class="modal-delete">
-   <div class="modal">
-      <div class="modal-head">
-         <h1>Delete Article</h1>
-      </div>
+<div class="modal">
+   <div class="modal__body">
+      <h1 class="modal-body__head">Delete Article</h1>
 
-      <div class="modal-content">
+      <div class="modal-body__content">
          Are you sure delete this article ??
       </div>
 
-      <div class="modal-footer cf">
-         <button class="cancel-btn">Cancel</button>
+      <div class="modal-body__footer cf">
+         <button class="footer__cancel-button">Cancel</button>
          <form action="/article/delete/<%= article.id %>?_method=DELETE" method="POST">
-            <button type="submit">Delete</button>
+            <button type="submit" class="footer__submit-button">Delete</button>
          </form>
       </div>
    </div>
