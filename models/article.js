@@ -38,7 +38,7 @@ const articleSchema = new mongoose.Schema({
 
 
 articleSchema.pre('validate', function (next) {
-   const allowedTags = ['hr', 'p', 'strong', 'em', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'blockquote', 'table', 'th', 'tr', 'td', 'pre', 'code', 'span', 'img'];
+   const allowedTags = ['hr', 'p', 'strong', 'em', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'blockquote', 'table', 'th', 'tr', 'td', 'pre', 'code', 'span', 'img', 'br'];
 
    if (this.title) {
       const title = slugify(this.title, {
