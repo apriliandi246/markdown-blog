@@ -173,13 +173,17 @@ ol {
 
 
 /* table tag */
+.table-body {
+   overflow-x: auto;
+}
+
 .article__body table {
    margin: auto;
+   overflow-x: auto;
    margin-bottom: 40px;
 }
 
-.article__body table,
-th,
+.article__body th,
 tr,
 td {
    padding: 13px;
