@@ -4,13 +4,13 @@ body {
 }
 
 .container {
-   width: 840px;
+   width: 92%;
    margin: 0 auto;
 }
 
 .article {
    width: 100%;
-   margin-top: 160px;
+   margin-top: 134px;
 }
 
 .article-head__title {
@@ -236,10 +236,10 @@ span {
 }
 
 .modal__body {
-   width: 400px;
+   width: 80%;
    padding: 13px;
    color: #ffffff;
-   margin: 15% auto;
+   margin: 40% auto;
    font-family: monospace;
    background-color: #292f36;
    border: 2px solid #cababa4d;
@@ -254,6 +254,7 @@ span {
 .modal-body__content {
    padding: 12px;
    font-size: 17px;
+   line-height: 25px;
 }
 
 .modal-body__footer {
@@ -285,22 +286,45 @@ span {
 
 /* Responsive Breakpoints */
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 620px) {
    .container {
-      width: 97%;
-   }
-
-   .article {
-      margin-top: 120px;
+      width: 80%;
    }
 
    .modal__body {
-      margin: 50% auto;
+      width: 400px;
+      margin: 35% auto;
    }
 }
 
-@media screen and (max-width: 846px) {
+@media screen and (min-width: 960px) {
    .container {
-      width: 92%;
+      width: 60%;
+   }
+
+   .article {
+      width: 100%;
+      margin-top: 140px;
+   }
+
+   .modal__body {
+      width: 400px;
+      margin: 15% auto;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .container {
+      width: 40%;
+   }
+
+   .article {
+      width: 100%;
+      margin-top: 160px;
+   }
+
+   .modal__body {
+      width: 400px;
+      margin: 15% auto;
    }
 }

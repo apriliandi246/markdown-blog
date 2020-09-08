@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-   width: 800px;
+   width: 90%;
    color: #ffffff;
    font-family: Ubuntu;
    justify-content: center;
@@ -66,8 +66,10 @@ body {
 .collapse__content ul {
    display: flex;
    flex-wrap: wrap;
+   text-align: center;
    margin-bottom: 25px;
    align-content: center;
+   flex-direction: column;
    justify-content: center;
 }
 
@@ -168,21 +170,20 @@ body {
 
 /* Responsive Breakpoints */
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 620px) {
    .container {
-      width: 97%;
+      width: 70%;
    }
 }
 
-@media screen and (max-width: 768px) {
-   .collapse__content ul {
-      flex-direction: column;
-      text-align: center;
+@media screen and (min-width: 960px) {
+   .container {
+      width: 67%;
    }
 }
 
-@media screen and (max-width: 846px) {
+@media screen and (min-width: 1200px) {
    .container {
-      width: 92%;
+      width: 38%;
    }
 }

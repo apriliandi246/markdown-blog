@@ -1,6 +1,14 @@
+body {
+   overflow-x: hidden;
+}
+
+.container {
+   width: 92%;
+   margin: 140px auto 40px auto;
+}
+
 form {
-   width: 1100px;
-   margin: 50px auto;
+   width: 100%;
 }
 
 .input-form {
@@ -114,4 +122,31 @@ select:hover {
 
 .form-line {
    border: 1px solid #253341;
+}
+
+
+/* Responsive Breakpoint */
+
+@media screen and (min-width: 620px) {
+   .container {
+      width: 94%;
+   }
+}
+
+@media screen and (min-width: 960px) {
+   .container {
+      width: 80%;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .container {
+      width: 70%;
+   }
+}
+
+@media screen and (min-width: 1500px) {
+   .container {
+      width: 60%;
+   }
 }

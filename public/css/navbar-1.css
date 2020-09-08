@@ -13,8 +13,9 @@ body {
    position: fixed;
    overflow: hidden;
    align-items: center;
+   padding: 0 40px 0 40px;
    background-color: #15202b;
-   justify-content: space-around;
+   justify-content: space-between;
    box-shadow: 0 0 2px 4px rgba(64, 74, 77, 0.2);
 }
 
@@ -43,4 +44,25 @@ body {
 
 .navbar__item:hover {
    color: #8a2be2;
+}
+
+
+/* Responsive Breakpoints */
+
+@media screen and (min-width: 620px) {
+   .navbar {
+      padding: 0 60px 0 60px;
+   }
+}
+
+@media screen and (min-width: 960px) {
+   .navbar {
+      padding: 0 100px 0 100px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .navbar {
+      padding: 0 300px 0 300px;
+   }
 }
