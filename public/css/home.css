@@ -148,8 +148,9 @@ body {
 
 .no-article {
    font-size: 23px;
-   font-weight: bolder;
    line-height: 40px;
+   font-weight: bolder;
+   text-align: center;
    margin: 180px 0 25px 0;
    font-family: monospace;
 }
