@@ -1,8 +1,7 @@
 'use strict';
 
-const express = require('express');
+const router = require('express').Router();
 const Article = require('../models/article');
-const router = express.Router();
 
 
 // make new article page

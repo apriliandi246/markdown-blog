@@ -50,7 +50,7 @@ articleSchema.pre('validate', function (next) {
    }
 
    if (this.markdown) {
-      this.sanitizedHtml = dompurify.sanitize(marked(this.markdown), { ALLOWED_TAGS: allowedTags }, { ALLOWED_ATTR: [''] });
+      this.sanitizedHtml = dompurify.sanitize(marked(this.markdown), { ALLOWED_TAGS: allowedTags });
    }
 
    next();
