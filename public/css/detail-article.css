@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-   width: 92%;
+   width: 91%;
    margin: 0 auto;
 }
 
@@ -22,8 +22,9 @@ body {
 .article-head__date {
    color: #5f9ea0;
    font-size: 1.4em;
+   line-height: 25px;
    letter-spacing: 2px;
-   margin: 20px 0 22px 0;
+   margin: 17px 0 19px 0;
    font-family: monospace;
 }
 
